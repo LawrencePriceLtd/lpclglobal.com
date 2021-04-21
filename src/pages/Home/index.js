@@ -289,8 +289,8 @@ const Home = () => {
       <section>
         <div className="md:px-16 md:flex md:space-x-8 md:py-40">
           <div className="flex-1">
-            <h1 className="capitalize text-4rem font-trirong pt-6">New Way</h1>
-            <h1 className="text-4xl text-coregray pt-3">True Investment</h1>
+            <h1 className="capitalize text-4rem font-trirong pt-6 dark:text-white">New Way</h1>
+            <h1 className="text-4xl text-coregray pt-3 dark:text-gray-400">True Investment</h1>
           </div>
           <div className="flex-1 relative">
             <div className="bg-white md:w-300px md:h-210px dark:bg-black absolute bottom-0 left-0 md:px-10 md:py-6">
