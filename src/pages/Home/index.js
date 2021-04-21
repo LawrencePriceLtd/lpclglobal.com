@@ -125,7 +125,7 @@ const Home = () => {
         <div className="md:flex md:items-end">
           <div className="md:w-1/2">
             <div className="py-12 md:pl-16">
-              <h1 className="text-4rem font-medium font-trirong dark:tex-white">SDG</h1>
+              <h1 className="text-4rem font-medium font-trirong dark:text-white">SDG</h1>
               <h1 className="text-5xl text-coregray pt-5 dark:text-gray-300">Sustainable Goals</h1>
             </div>
             <div className="md:flex">
