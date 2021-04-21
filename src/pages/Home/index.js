@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import Carousel from 'react-multi-carousel';
+import { AttentionSeeker, Flip, Slide } from 'react-awesome-reveal';
 import 'react-multi-carousel/lib/styles.css';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
@@ -47,30 +48,40 @@ const Home = () => {
       <section>
         <div className="md:flex md:space-x-10 md:px-16 md:pt-40 md:pb-20">
           <div className="md:w-1/2">
-            <h1 className="text-4rem font-trirong font-medium dark:text-white">
-              We are here for those
-              who are bold enough
-              to face
-              <span className="text-lawrenceprice"> Change.</span>
-            </h1>
-            <h1 className="text-4xl md:pt-10 pt-4 dark:text-gray-400">
-              Driving business Innovation across Africa
-              and beyond
-            </h1>
+            <Slide direction="up">
+              <h1 className="text-4rem font-trirong font-medium dark:text-white">
+                We are here for those
+                who are bold enough
+                to face
+                <span className="text-lawrenceprice"> Change.</span>
+              </h1>
+            </Slide>
+            <AttentionSeeker effect="pulse">
+              <h1 className="text-4xl md:pt-10 pt-4 dark:text-gray-400">
+                Driving business Innovation across Africa
+                and beyond
+              </h1>
+            </AttentionSeeker>
           </div>
           <div className="md:w-1/2">
-            <img className="block pt-10" src={Sphere} alt="sphere" />
+            <Slide direction="up">
+              <img className="block pt-10" src={Sphere} alt="sphere" />
+            </Slide>
           </div>
         </div>
       </section>
       <section>
         <div className="md:px-16 md:py-20">
-          <h1 className="font-trirong text-4rem font-medium dark:text-white">The Future is Now.</h1>
-          <h1 className="text-4xl font-medium text-coregray dark:text-gray-400 pt-4">
-            Creating and building Solutions
-            <br />
-            to Africa’s Business Problems.
-          </h1>
+          <Flip direction="horizontal">
+            <h1 className="font-trirong text-4rem font-medium dark:text-white">The Future is Now.</h1>
+          </Flip>
+          <AttentionSeeker effect="pulse">
+            <h1 className="text-4xl font-medium text-coregray dark:text-gray-400 pt-4">
+              Creating and building Solutions
+              <br />
+              to Africa’s Business Problems.
+            </h1>
+          </AttentionSeeker>
           <div className="md:flex justify-start items-end">
             <img className="block pt-12" src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1618925885/blackboxlanding/F110-exhaust-half-hero_Sloved_whj4fr.png" alt="mechanism" />
             <button type="button" className="bg-orange hover:bg-yellow-600 flex items-center space-x-6 text-lg font-medium md:pl-20 md:pr-10 text-white md:pb-6 md:pt-36 flex-grow-0">
