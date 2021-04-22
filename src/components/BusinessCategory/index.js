@@ -6,26 +6,26 @@ import Razor from '../../assets/razor.svg';
 
 const BusinessCategory = ({ businessType }) => (
 
-  <div className="md:flex items-center md:px-16 md:py-40">
+  <div className="md:flex items-center md:px-16 md:space-y-0 space-y-20 px-5 md:py-40 py-20">
     <div className="md:w-1/2">
       <AttentionSeeker>
         <h1 className="text-lg text-orange font-medium">{businessType}</h1>
       </AttentionSeeker>
       <AttentionSeeker effect="swing">
-        <p className="text-5xl font-trirong font-medium pt-10 dark:text-white">
+        <p className="md:text-5xl text-4xl font-trirong font-medium pt-10 dark:text-white">
           leveraging innovation and
           advanced analytics to create
           bespoke investment products
         </p>
       </AttentionSeeker>
       <Slide direction="left">
-        <p className="font-medium text-coregray text-4xl md:pt-10 pt-4 dark:text-gray-400">
+        <p className="font-medium text-coregray md:text-4xl text-3xl md:pt-10 pt-4 dark:text-gray-400">
           Then, who taught you? who attended
           to you? Without a governess, you must
           have been neglected.
         </p>
       </Slide>
-      <div className="md:pt-16">
+      <div className="md:pt-16 pt-10">
         <AttentionSeeker effect="pulse">
           <button type="button" className="hover:text-yellow-600 text-orange flex items-center space-x-2 text-24px font-bold">
             <span>Read more</span>

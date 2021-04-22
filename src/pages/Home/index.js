@@ -1,16 +1,16 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import Carousel from 'react-multi-carousel';
-import { AttentionSeeker, Flip, Slide } from 'react-awesome-reveal';
+import { AttentionSeeker, Flip } from 'react-awesome-reveal';
 import 'react-multi-carousel/lib/styles.css';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 
 // images
-import Sphere from '../../assets/sphere.svg';
 import Partners from '../../components/Partners';
 import CustomButtonGroupAsArrows from '../../components/CustomButtonGroupAsArrows';
 import BusinessCategory from '../../components/BusinessCategory';
+import Banner from '../../components/Banner';
 
 const articles = [
   {
@@ -46,32 +46,10 @@ const Home = () => {
     <div>
       <Navbar />
       <section>
-        <div className="md:flex md:space-x-10 md:px-16 md:pt-40 md:pb-20">
-          <div className="md:w-1/2">
-            <Slide direction="up">
-              <h1 className="text-4rem font-trirong font-medium dark:text-white">
-                We are here for those
-                who are bold enough
-                to face
-                <span className="text-lawrenceprice"> Change.</span>
-              </h1>
-            </Slide>
-            <AttentionSeeker effect="pulse">
-              <h1 className="text-4xl md:pt-10 pt-4 dark:text-gray-400">
-                Driving business Innovation across Africa
-                and beyond
-              </h1>
-            </AttentionSeeker>
-          </div>
-          <div className="md:w-1/2">
-            <Slide direction="up">
-              <img className="block pt-10" src={Sphere} alt="sphere" />
-            </Slide>
-          </div>
-        </div>
+        <Banner />
       </section>
       <section>
-        <div className="md:px-16 md:py-20">
+        <div className="md:px-16 px-5 md:py-20 py-20">
           <Flip direction="horizontal">
             <h1 className="font-trirong text-4rem font-medium dark:text-white">The Future is Now.</h1>
           </Flip>
@@ -82,9 +60,9 @@ const Home = () => {
               to Africa’s Business Problems.
             </h1>
           </AttentionSeeker>
-          <div className="md:flex justify-start items-end">
+          <div className="md:flex justify-start items-end md:pt-0 pt-12">
             <img className="block pt-12" src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1618925885/blackboxlanding/F110-exhaust-half-hero_Sloved_whj4fr.png" alt="mechanism" />
-            <button type="button" className="bg-orange hover:bg-yellow-600 flex items-center space-x-6 text-lg font-medium md:pl-20 md:pr-10 text-white md:pb-6 md:pt-36 flex-grow-0">
+            <button type="button" className="bg-orange hover:bg-yellow-600 flex items-center space-x-6 text-lg font-medium md:pl-20 pl-10 pr-10  text-white pb-6 md:pt-36 pt-6 flex-grow-0">
               <span>Start Now</span>
               <span>
                 <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,9 +77,9 @@ const Home = () => {
         <BusinessCategory businessType="Lawrence Price Wealth" />
       </section>
       <section className="bg-lightgrey dark:bg-kiwi">
-        <div className="md:px-16 md:py-40 relative">
+        <div className="md:px-16 px-5 md:py-40 py-32 relative">
           <div className="relative">
-            <div className="bg-white dark:bg-black absolute bottom-0 left-0 md:px-20 md:py-12">
+            <div className="bg-white dark:bg-black md:absolute bottom-0 left-0 md:px-20 px-5 py-10 md:py-12">
               <div className="flex justify-between">
                 <h1 className="text-xs text-orange uppercase font-bold">Report</h1>
                 <h1 className="text-textgrey text-8px font-medium uppercase">Lawrence Price business solution</h1>
@@ -117,7 +95,7 @@ const Home = () => {
                   <br />
                   a second look at him, “What ails you?” he added; “is the doctor ill
                 </p>
-                <button className="" type="button">
+                <button className="md:mt-0 mt-8" type="button">
                   <svg width="76" height="16" viewBox="0 0 76 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM75.2822 8.70711C75.6728 8.31658 75.6728 7.68342 75.2822 7.29289L68.9183 0.928932C68.5278 0.538408 67.8946 0.538408 67.5041 0.928932C67.1135 1.31946 67.1135 1.95262 67.5041 2.34315L73.1609 8L67.5041 13.6569C67.1135 14.0474 67.1135 14.6805 67.5041 15.0711C67.8946 15.4616 68.5278 15.4616 68.9183 15.0711L75.2822 8.70711ZM1 9H74.5751V7H1V9Z" fill="#FF8300" />
                   </svg>
@@ -135,14 +113,14 @@ const Home = () => {
       <section className="bg-white dark:bg-kiwi">
         <div className="md:flex md:items-end">
           <div className="md:w-1/2">
-            <div className="py-12 md:pl-16">
-              <h1 className="text-4rem font-medium font-trirong dark:text-white">SDG</h1>
-              <h1 className="text-5xl text-coregray pt-5 dark:text-gray-300">Sustainable Goals</h1>
+            <div className="py-12 md:pl-16 pl-5">
+              <h1 className="md:text-4rem text-5xl font-medium font-trirong dark:text-white">SDG</h1>
+              <h1 className="md:text-5xl text-3xl text-coregray pt-5 dark:text-gray-300">Sustainable Goals</h1>
             </div>
             <div className="md:flex">
               <div>
                 <img
-                  className="md:h-700px object-cover"
+                  className="md:h-700px h-96 w-full object-cover"
                   src="https://images.pexels.com/photos/67552/giraffe-tall-mammal-africa-67552.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                   alt="Giraffes"
                 />
@@ -153,7 +131,7 @@ const Home = () => {
                   <h1 className="text-4xl text-white font-medium capitalize pt-2">For good.</h1>
                 </div>
                 <img
-                  className="md:h-700px object-cover"
+                  className="md:h-700px h-96 w-full object-cover"
                   src="https://images.pexels.com/photos/3735580/pexels-photo-3735580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                   alt="Person"
                 />
@@ -168,7 +146,7 @@ const Home = () => {
                   <h1 className="text-4xl text-white font-medium capitalize pt-2">For good.</h1>
                 </div>
                 <img
-                  className="md:h-950px object-cover"
+                  className="md:h-950px h-96 w-full object-cover"
                   src="https://images.pexels.com/photos/5427870/pexels-photo-5427870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                   alt="education"
                 />
@@ -179,7 +157,7 @@ const Home = () => {
                   <h1 className="text-4xl text-white font-medium capitalize pt-2">For good.</h1>
                 </div>
                 <img
-                  className="md:h-950px object-cover"
+                  className="md:h-950px h-96 w-full object-cover"
                   src="https://images.pexels.com/photos/3913025/pexels-photo-3913025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                   alt="Person"
                 />
@@ -189,14 +167,14 @@ const Home = () => {
         </div>
       </section>
       <section className="bg-lightgrey dark:bg-kiwi">
-        <div className="md:px-16 md:py-40">
+        <div className="md:px-16 px-5 md:py-40 py-32">
           <div className="relative">
             <Carousel
               additionalTransfrom={0}
               arrows={false}
               autoPlaySpeed={3000}
               centerMode={false}
-              className=""
+              className="md:mb-0 mb-6"
               containerClass="container-padding-bottom"
               customButtonGroup={<CustomButtonGroupAsArrows />}
               dotListClass=""
@@ -241,7 +219,7 @@ const Home = () => {
             >
               {articles?.map((article) => (
                 <div className="md:w-386px">
-                  <div className="bg-white md:w-300px md:h-210px dark:bg-black absolute bottom-0 left-0 md:px-10 md:py-6">
+                  <div className="bg-white md:w-300px md:h-210px dark:bg-black absolute bottom-0 left-0 md:px-10 px-5 py-6">
                     <div className="flex space-x-3">
                       <h1 className="text-6px text-coregray uppercase font-bold">Article</h1>
                       <h1 className="text-textgrey text-6px font-medium uppercase">{article.category}</h1>
@@ -273,9 +251,9 @@ const Home = () => {
       </section>
       <section>
         <div className="relative">
-          <div className="absolute md:px-16 md:py-40">
+          <div className="absolute md:px-16 px-5 py-16 md:py-40">
             <h1 className="text-lg text-white font-bold uppercase">LP Business Solution</h1>
-            <h1 className="font-trirong font-semibold text-4rem text-white md:pt-96">IoT in Agriculture</h1>
+            <h1 className="font-trirong font-semibold md:text-4rem text-5xl text-white md:pt-96 pt-5">IoT in Agriculture</h1>
             <h1 className="font-medium text-5xl text-white capitalize md:pt-6">Sustainable Goals</h1>
             <div>
               <button type="button" className="flex text-white text-lg font-medium space-x-2 items-center mt-6">
@@ -288,7 +266,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <img className="md:h-900px md:w-full" src="https://images.pexels.com/photos/109391/pexels-photo-109391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="leaf" />
+          <img className="md:h-900px h-96 w-full md:w-full" src="https://images.pexels.com/photos/109391/pexels-photo-109391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="leaf" />
         </div>
       </section>
       <section>
@@ -298,13 +276,13 @@ const Home = () => {
         <BusinessCategory businessType="LP Capital" />
       </section>
       <section>
-        <div className="md:px-16 md:flex md:space-x-8 md:py-40">
+        <div className="md:px-16 px-5 py-20 md:flex md:space-x-8 md:space-y-0 space-y-10 md:py-40">
           <div className="flex-1">
             <h1 className="capitalize text-4rem font-trirong pt-6 dark:text-white">New Way</h1>
-            <h1 className="text-4xl text-coregray pt-3 dark:text-gray-400">True Investment</h1>
+            <h1 className="text-4xl text-coregray pt-3 dark:text-gray-400 md:pb-0 ">True Investment</h1>
           </div>
           <div className="flex-1 relative">
-            <div className="bg-white md:w-300px md:h-210px dark:bg-black absolute bottom-0 left-0 md:px-10 md:py-6">
+            <div className="bg-white md:w-300px md:h-210px dark:bg-black absolute bottom-0 left-0 md:px-10 px-5 py-6">
               <a href="3a" className="block text-2xl font-trirong font-medium pt-2 dark:text-white hover:text-orange">
                 The Future
                 is Now. Take it
@@ -321,13 +299,13 @@ const Home = () => {
               </div>
             </div>
             <img
-              className="md:h-450px w-full object-cover"
+              className="md:h-450px h-96  w-full object-cover"
               src="https://images.pexels.com/photos/5427870/pexels-photo-5427870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt="people"
             />
           </div>
           <div className="flex-1 relative">
-            <div className="bg-white md:w-300px md:h-210px dark:bg-black absolute bottom-0 left-0 md:px-10 md:py-6">
+            <div className="bg-white md:w-300px md:h-210px dark:bg-black absolute bottom-0 left-0 md:px-10 px-5 py-6">
               <a href="3a" className="block text-2xl font-trirong font-medium pt-2 dark:text-white hover:text-orange">
                 Standing Out
               </a>
@@ -343,7 +321,7 @@ const Home = () => {
               </div>
             </div>
             <img
-              className="md:h-450px w-full object-cover"
+              className="md:h-450px h-96  w-full object-cover"
               src="https://images.pexels.com/photos/3756879/pexels-photo-3756879.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
               alt="people"
             />
