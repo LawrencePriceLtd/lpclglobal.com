@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import Carousel from 'react-multi-carousel';
-import { AttentionSeeker, Flip } from 'react-awesome-reveal';
+import { AttentionSeeker, Flip, Fade } from 'react-awesome-reveal';
 import 'react-multi-carousel/lib/styles.css';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
@@ -114,8 +114,12 @@ const Home = () => {
         <div className="md:flex md:items-end">
           <div className="md:w-1/2">
             <div className="py-12 md:pl-16 pl-5">
-              <h1 className="md:text-4rem text-5xl font-medium font-trirong dark:text-white">SDG</h1>
-              <h1 className="md:text-5xl text-3xl text-coregray pt-5 dark:text-gray-300">Sustainable Goals</h1>
+              <Fade direction="down">
+                <h1 className="md:text-4rem text-5xl font-medium font-trirong dark:text-white">SDG</h1>
+              </Fade>
+              <Fade direction="up">
+                <h1 className="md:text-5xl text-3xl text-coregray pt-5 dark:text-gray-300">Sustainable Goals</h1>
+              </Fade>
             </div>
             <div className="md:flex">
               <div>
@@ -276,10 +280,14 @@ const Home = () => {
         <BusinessCategory businessType="LP Capital" />
       </section>
       <section>
-        <div className="md:px-16 px-5 py-20 md:flex md:space-x-8 md:space-y-0 space-y-10 md:py-40">
+        <div className="md:px-16 px-5 py-20 bg-lightgrey dark:bg-kiwi md:flex md:space-x-8 md:space-y-0 space-y-10 md:py-40">
           <div className="flex-1">
-            <h1 className="capitalize text-4rem font-trirong pt-6 dark:text-white">New Way</h1>
-            <h1 className="text-4xl text-coregray pt-3 dark:text-gray-400 md:pb-0 ">True Investment</h1>
+            <Fade direction="down">
+              <h1 className="capitalize text-4rem font-trirong pt-6 dark:text-white">New Way</h1>
+            </Fade>
+            <Fade direction="up">
+              <h1 className="text-4xl text-coregray pt-3 dark:text-gray-400 md:pb-0 ">True Investment</h1>
+            </Fade>
           </div>
           <div className="flex-1 relative">
             <div className="bg-white md:w-300px md:h-210px dark:bg-black absolute bottom-0 left-0 md:px-10 px-5 py-6">

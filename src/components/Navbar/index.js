@@ -4,6 +4,9 @@ import { ThemeContext } from '../../context/themeContext';
 import Logo from '../../assets/logo.svg';
 import ThemeButton from '../ThemeButton';
 
+// styles
+import '../../App.css';
+
 // eslint-disable-next-line react/prop-types
 const Navbar = () => {
   const { theme } = useContext(ThemeContext);
@@ -13,7 +16,7 @@ const Navbar = () => {
     <>
       <nav
         aria-label="primary"
-        className="w-full flex bg-white items-center justify-between flex-wrap px-5 dark:bg-kiwi md:px-16 py-2 md:py-4"
+        className="w-full flex bg-white border-b border-gray-300 dark:border-gray-800 items-center justify-between flex-wrap px-5 dark:bg-kiwi md:px-16 py-2 md:py-4"
       >
 
         <div className="flex items-center flex-shrink-0 text-white">
@@ -57,14 +60,28 @@ const Navbar = () => {
               About
             </NavLink>
             <NavLink
-              to="/about"
+              to="/"
               className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6"
               activeClassName="navly active"
             >
               Subsidiaries
             </NavLink>
             <NavLink
-              to="/about"
+              to="/"
+              className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6"
+              activeClassName="navly active"
+            >
+              Industries
+            </NavLink>
+            <NavLink
+              to="/"
+              className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6"
+              activeClassName="navly active"
+            >
+              Products
+            </NavLink>
+            <NavLink
+              to="/"
               className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6"
               activeClassName="navly active"
             >

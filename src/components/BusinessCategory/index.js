@@ -1,5 +1,5 @@
 import React from 'react';
-import { AttentionSeeker, Slide } from 'react-awesome-reveal';
+import { AttentionSeeker, Fade } from 'react-awesome-reveal';
 import PropTypes from 'prop-types';
 // iamges
 import Razor from '../../assets/razor.svg';
@@ -11,20 +11,20 @@ const BusinessCategory = ({ businessType }) => (
       <AttentionSeeker>
         <h1 className="text-lg text-orange font-medium">{businessType}</h1>
       </AttentionSeeker>
-      <AttentionSeeker effect="swing">
+      <Fade direction="down">
         <p className="md:text-5xl text-4xl font-trirong font-medium pt-10 dark:text-white">
           leveraging innovation and
           advanced analytics to create
           bespoke investment products
         </p>
-      </AttentionSeeker>
-      <Slide direction="left">
+      </Fade>
+      <AttentionSeeker effect="pulse">
         <p className="font-medium text-coregray md:text-4xl text-3xl md:pt-10 pt-4 dark:text-gray-400">
           Then, who taught you? who attended
           to you? Without a governess, you must
           have been neglected.
         </p>
-      </Slide>
+      </AttentionSeeker>
       <div className="md:pt-16 pt-10">
         <AttentionSeeker effect="pulse">
           <button type="button" className="hover:text-yellow-600 text-orange flex items-center space-x-2 text-24px font-bold">

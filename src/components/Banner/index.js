@@ -23,7 +23,7 @@ const Banner = () => (
       </AttentionSeeker>
     </div>
     <div className="md:w-1/2">
-      <Slide direction="up">
+      <Slide direction="down">
         <img className="block pt-10" src={Sphere} alt="sphere" />
       </Slide>
     </div>
