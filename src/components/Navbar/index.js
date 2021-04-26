@@ -6,17 +6,19 @@ import ThemeButton from '../ThemeButton';
 
 // styles
 import '../../App.css';
+import Products from '../Products';
 
 // eslint-disable-next-line react/prop-types
 const Navbar = () => {
   const { theme } = useContext(ThemeContext);
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <>
       <nav
         aria-label="primary"
-        className="w-full flex bg-white border-b border-gray-300 dark:border-gray-800 items-center justify-between flex-wrap px-5 dark:bg-kiwi md:px-16 py-2 md:py-4"
+        className="relative w-full flex bg-white border-b border-gray-300 dark:border-gray-800 items-center justify-between flex-wrap px-5 dark:bg-kiwi md:px-16 py-2 md:py-4"
       >
 
         <div className="flex items-center flex-shrink-0 text-white">
@@ -73,13 +75,14 @@ const Navbar = () => {
             >
               Industries
             </NavLink>
-            <NavLink
-              to="/"
-              className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6"
+            <button
+              type="button"
+              onClick={() => setOpen(!open)}
+              className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6 focus:outline-none"
               activeClassName="navly active"
             >
-              Products
-            </NavLink>
+              <span className={open ? 'text-orange' : 'text-black'}>Products</span>
+            </button>
             <NavLink
               to="/"
               className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6"
@@ -95,8 +98,8 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-
       </nav>
+      {open ? (<Products />) : ''}
     </>
   );
 };

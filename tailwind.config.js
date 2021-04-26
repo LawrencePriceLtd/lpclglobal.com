@@ -13,6 +13,7 @@ module.exports = {
         blackescape: '#0000001e',
         kiwi: '#0e182a',
         copperblack: '#282D27',
+        gray1: '#707173',
       },
       fontFamily: {
         redhat: ['Red Hat Display', 'sans-serif'],

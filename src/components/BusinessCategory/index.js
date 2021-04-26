@@ -9,7 +9,7 @@ const BusinessCategory = ({ businessType }) => (
   <div className="md:flex items-center md:px-16 md:space-y-0 space-y-20 px-5 md:py-40 py-20">
     <div className="md:w-1/2">
       <AttentionSeeker>
-        <h1 className="text-lg text-orange font-medium">{businessType}</h1>
+        <h1 className="text-lg text-orange font-medium uppercase">{businessType}</h1>
       </AttentionSeeker>
       <Fade direction="down">
         <p className="md:text-5xl text-4xl font-trirong font-medium pt-10 dark:text-white">
