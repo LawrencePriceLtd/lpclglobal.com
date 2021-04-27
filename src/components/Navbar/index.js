@@ -84,7 +84,7 @@ const Navbar = () => {
               <span className={open ? 'text-orange' : 'text-black'}>Products</span>
             </button>
             <NavLink
-              to="/"
+              to="/contact"
               className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6"
               activeClassName="navly active"
             >

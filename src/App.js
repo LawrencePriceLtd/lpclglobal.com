@@ -6,6 +6,7 @@ import { ThemeProvider } from './context/themeContext';
 import Background from './components/Background';
 import Home from './pages/Home';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 const routes = [
   {
@@ -16,6 +17,11 @@ const routes = [
   {
     path: '/about',
     component: About,
+    exact: true,
+  },
+  {
+    path: '/contact',
+    component: Contact,
     exact: true,
   },
 ].map(({ path, component: Component, exact }) => (
