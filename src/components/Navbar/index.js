@@ -62,14 +62,14 @@ const Navbar = () => {
               About
             </NavLink>
             <NavLink
-              to="/"
+              to="/subsidiaries"
               className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6"
               activeClassName="navly active"
             >
               Subsidiaries
             </NavLink>
             <NavLink
-              to="/"
+              to="/industries"
               className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6"
               activeClassName="navly active"
             >
@@ -81,7 +81,7 @@ const Navbar = () => {
               className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6 focus:outline-none"
               activeClassName="navly active"
             >
-              <span className={open ? 'text-orange' : 'text-black'}>Products</span>
+              <span className={open ? 'text-orange' : 'text-black dark:text-white'}>Products</span>
             </button>
             <NavLink
               to="/contact"

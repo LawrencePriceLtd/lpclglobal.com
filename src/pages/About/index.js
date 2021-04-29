@@ -1,7 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Rotate, Slide } from 'react-awesome-reveal';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
+import BioCard from '../../components/BioCard';
+
+// json
+import bios from '../../json/bios';
 
 // icons
 import globe from '../../assets/globe.svg';
@@ -11,10 +16,10 @@ const About = () => (
   <>
     <Navbar />
     <section>
-      <div className="md:pl-16 md:py-40">
+      <div className="md:pl-16 pl-5 py-20 md:py-40">
         <div className="md:flex items-center">
           <div className="md:w-3/5">
-            <h1 className="md:text-7xl text-orange font-trirong font-medium">
+            <h1 className="md:text-7xl text-5xl text-orange font-trirong font-medium">
               We are challenging
               the Status Quo.
             </h1>
@@ -37,7 +42,7 @@ const About = () => (
       </div>
     </section>
     <section>
-      <div className="md:px-16 md:py-40">
+      <div className="md:px-16 px-5 py-12 md:py-40">
         <div className="md:pl-8">
           <Rotate direction="bottom-left">
             <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,100 +62,26 @@ const About = () => (
         </div>
         <div>
           <div className="md:pt-44">
-            <div className="bg-altgrey dark:bg-gray-900 px-8 rounded-tl-2xl rounded-tr-2xl relative">
-              <div className="md:flex items-center space-x-6 relative md:-top-24">
-                <div className="md:w-1/4 relative">
-                  <div className="bg-white dark:bg-black absolute bottom-0 left-0 px-5 py-6">
-                    <a href="3a" className="block text-2xl font-trirong font-medium pt-2 dark:text-white hover:text-orange">
-                      Onyeabo Okafor
-                    </a>
-                    <div className="">
-                      <p className="text-coregray uppercase text-10px pt-1 dark:text-gray-300">
-                        CHAIRMAN LP&CO.
-                      </p>
-                      <button className="flex space-x-2 items-center mt-3 text-orange uppercase text-8px" type="button">
-                        <span>read bio</span>
-                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1 1L4 4L1 7" stroke="#FF8300" strokeLinecap="square" />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                  <img
-                    className="md:h-380px h-96  w-full object-cover"
-                    src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1619184026/blackboxlanding/okafor_iwsoeo.svg"
-                    alt="people"
+            <div className="bg-altgrey dark:bg-gray-900 md:px-8 rounded-tl-2xl rounded-tr-2xl relative">
+              <div className="md:flex items-center md:space-x-6 md:space-y-0 space-y-8 relative md:-top-24">
+                {bios?.slice(0, 4).map((bio) => (
+                  <BioCard
+                    name={bio.name}
+                    imageUrl={bio.imageUrl}
+                    position={bio.position}
+                    id={bio.id}
                   />
-                </div>
-                <div className="md:w-1/4 relative">
-                  <div className="bg-white dark:bg-black absolute bottom-0 left-0 px-5 py-6">
-                    <a href="3a" className="block text-2xl font-trirong font-medium pt-2 dark:text-white hover:text-orange">
-                      Oluseun Taiwo
-                    </a>
-                    <div className="">
-                      <p className="text-coregray text-10px uppercase pt-1 dark:text-gray-300">
-                        GCEO  LP&CO, NIGERIA, ZAMBIA.
-                      </p>
-                      <button className="flex space-x-2 items-center mt-3 text-orange uppercase text-8px" type="button">
-                        <span>read bio</span>
-                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1 1L4 4L1 7" stroke="#FF8300" strokeLinecap="square" />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                  <img
-                    className="md:h-380px h-96  w-full object-cover"
-                    src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1619184001/blackboxlanding/sean_sibgwd.svg"
-                    alt="people"
-                  />
-                </div>
-                <div className="md:w-1/4 relative">
-                  <div className="bg-white dark:bg-black absolute bottom-0 left-0 px-5 py-6">
-                    <a href="3a" className="block text-2xl font-trirong font-medium pt-2 dark:text-white hover:text-orange">
-                      Abiodun A.
-                    </a>
-                    <div className="">
-                      <p className="uppercase text-coregray text-10px pt-1 dark:text-gray-300">
-                        MD, Business Solutions  LP&CO.
-                      </p>
-                      <button className="flex space-x-2 items-center mt-3 text-orange uppercase text-8px" type="button">
-                        <span>read bio</span>
-                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1 1L4 4L1 7" stroke="#FF8300" strokeLinecap="square" />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                  <img
-                    className="md:h-380px h-96  w-full object-cover"
-                    src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1618821392/blackboxlanding/IMG_3017_ltypby.jpg"
-                    alt="people"
-                  />
-                </div>
-                <div className="md:w-1/4 relative">
-                  <div className="bg-white dark:bg-black absolute bottom-0 left-0 md:px-10 px-5 py-6">
-                    <a href="3a" className="block text-2xl font-trirong font-medium pt-2 dark:text-white hover:text-orange">
-                      Rukayat O.
-                    </a>
-                    <div className="">
-                      <p className="uppercase text-coregray text-10px pt-1 dark:text-gray-300">
-                        HEAD DATA & ANALYTICS  LP&CO.
-                      </p>
-                      <button className="flex space-x-2 items-center mt-3 text-orange uppercase text-8px" type="button">
-                        <span>read bio</span>
-                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1 1L4 4L1 7" stroke="#FF8300" strokeLinecap="square" />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                  <img
-                    className="md:h-380px h-96  w-full object-cover"
-                    src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1618305827/blackboxlanding/Rukayat_1.25x_zlw96o.jpg"
-                    alt="people"
-                  />
-                </div>
+                ))}
+              </div>
+              <div className="flex justify-end pb-3 md:pt-0 pt-5 pr-12">
+                <Link to="/team" className="flex items-center space-x-1 text-orange uppercase text-sm">
+                  <span>SEE FULL TEAMS</span>
+                  <span>
+                    <svg width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 2L6 7L2 12" stroke="#FF8300" strokeWidth="1.5" strokeLinecap="square" />
+                    </svg>
+                  </span>
+                </Link>
               </div>
             </div>
           </div>
@@ -161,7 +92,7 @@ const About = () => (
       <div className="relative">
         <div className="absolute md:px-16 px-5 py-16 md:py-40">
           <h1 className="text-lg text-white font-bold uppercase">Lawrence Price & Company.</h1>
-          <h1 className="font-trirong font-semibold md:text-4rem text-5xl text-white md:pt-96 pt-5">
+          <h1 className="font-trirong font-semibold md:text-4rem text-4xl text-white md:pt-96 pt-5">
             The Future of Tech &
             <br />
             Coporate Growth in Africa

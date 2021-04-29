@@ -7,6 +7,8 @@ import Background from './components/Background';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Team from './pages/Team';
+import Bio from './pages/Bio';
 
 const routes = [
   {
@@ -20,8 +22,18 @@ const routes = [
     exact: true,
   },
   {
+    path: '/team',
+    component: Team,
+    exact: true,
+  },
+  {
     path: '/contact',
     component: Contact,
+    exact: true,
+  },
+  {
+    path: '/bio/:id',
+    component: Bio,
     exact: true,
   },
 ].map(({ path, component: Component, exact }) => (

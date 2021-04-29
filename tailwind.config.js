@@ -14,6 +14,7 @@ module.exports = {
         kiwi: '#0e182a',
         copperblack: '#282D27',
         gray1: '#707173',
+        gray2: '#61686C',
       },
       fontFamily: {
         redhat: ['Red Hat Display', 'sans-serif'],
@@ -33,12 +34,14 @@ module.exports = {
         '380px': '380px',
         '450px': '450px',
         '455px': '455px',
+        '492px': '492px',
         '700px': '700px',
         '900px': '900px',
         '950px': '950px',
       }),
       width: () => ({
         '300px': '300px',
+        '360px': '360px',
         '386px': '386px',
       }),
     },

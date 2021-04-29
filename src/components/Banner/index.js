@@ -1,10 +1,8 @@
 import React from 'react';
 import { AttentionSeeker, Slide } from 'react-awesome-reveal';
+import PropTypes from 'prop-types';
 
-// images/icons
-import Sphere from '../../assets/sphere.svg';
-
-const Banner = () => (
+const Banner = ({ image }) => (
   <div className="md:flex md:space-x-10 md:px-16 px-5 md:pt-40 pt-20 md:pb-20">
     <div className="md:w-1/2">
       <Slide direction="up">
@@ -24,10 +22,14 @@ const Banner = () => (
     </div>
     <div className="md:w-1/2">
       <Slide direction="down">
-        <img className="block pt-10" src={Sphere} alt="sphere" />
+        <img className="block pt-10" src={image} alt="sphere" />
       </Slide>
     </div>
   </div>
 );
 
 export default Banner;
+
+Banner.propTypes = {
+  image: PropTypes.string.isRequired,
+};
