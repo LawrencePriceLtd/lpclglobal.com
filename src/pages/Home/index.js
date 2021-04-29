@@ -56,10 +56,10 @@ const Home = () => {
       <section>
         <div className="md:px-16 px-5 md:py-20 py-20">
           <Flip direction="horizontal">
-            <h1 className="font-trirong text-4rem font-medium dark:text-white">The Future is Now.</h1>
+            <h1 className="font-trirong md:text-4rem text-5xl font-medium dark:text-white">The Future is Now.</h1>
           </Flip>
           <AttentionSeeker effect="pulse">
-            <h1 className="text-4xl font-medium text-coregray dark:text-gray-400 pt-4">
+            <h1 className="md:text-4xl text-2xl font-medium text-coregray dark:text-gray-400 pt-4">
               Creating and building Solutions
               <br />
               to Africa’s Business Problems.
@@ -80,15 +80,15 @@ const Home = () => {
       </section>
       <section>
         <div className="md:px-16 px-5 md:py-20 py-40">
-          <h1 className="md:text-4xl font-trirong capitalize text-center font-medium dark:text-white">Industries</h1>
-          <div className="flex justify-center items-center md:space-x-20 md:pt-20">
-            <a href="#a" className="flex space-x-4 items-center">
+          <h1 className="md:text-4xl text-3xl font-trirong capitalize text-center font-medium dark:text-white">Industries</h1>
+          <div className="flex justify-center items-center md:space-x-20 space-x-2 md:pt-20 pt-10">
+            <a href="#a" className="flex md:space-x-4 space-x-2 items-center">
               <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.42731 32.7307C3.91151 32.0658 3.6536 31.3404 3.6536 30.5547C3.6536 30.0107 3.76823 29.4667 3.99747 28.9227C4.28403 28.3787 4.59924 27.9253 4.94311 27.5627L13.9697 19.584L2.19216 16.5013C1.3898 16.2596 0.788032 15.7458 0.386852 14.96C0.0429838 14.1742 -0.0716392 13.2978 0.0429834 12.3307C0.157606 11.5449 0.530132 10.9102 1.16056 10.4267C1.84829 9.88267 2.59334 9.61067 3.3957 9.61067C3.85419 9.61067 4.37 9.76178 4.94311 10.064L15.4311 16.32L13.5398 4.17067L13.4539 3.44533C13.4539 2.47822 13.7404 1.66222 14.3135 0.997331C14.944 0.332444 15.8323 0 16.9785 0C18.1247 0 18.9844 0.332444 19.5575 0.997331C20.188 1.66222 20.5032 2.47822 20.5032 3.44533L20.4172 4.17067L18.5259 16.32L29.0139 10.064C29.587 9.76178 30.1028 9.61067 30.5613 9.61067C31.5356 9.61067 32.338 9.94311 32.9684 10.608C33.6561 11.2729 34 12.0889 34 13.056C34 13.9022 33.7994 14.6578 33.3982 15.3227C32.9971 15.9271 32.4526 16.32 31.7649 16.5013L19.9874 19.584L29.0139 27.5627C29.3578 27.9253 29.6443 28.3787 29.8736 28.9227C30.1601 29.4667 30.3034 30.0107 30.3034 30.5547C30.3034 31.3404 30.0455 32.0658 29.5297 32.7307C28.842 33.5769 27.8963 34 26.6928 34C26.1197 34 25.5466 33.8791 24.9735 33.6373C24.4577 33.3351 24.0565 32.9422 23.7699 32.4587L16.9785 21.3067L10.1871 32.4587C9.90055 32.9422 9.47071 33.3351 8.8976 33.6373C8.3818 33.8791 7.83734 34 7.26422 34C6.06068 34 5.11505 33.5769 4.42731 32.7307Z" fill={theme === 'light' ? '#000' : '#fff'} />
               </svg>
-              <span className="text-3xl font-trirong font-medium capitalize dark:text-white">Wealth</span>
+              <span className="md:text-3xl font-trirong font-medium capitalize dark:text-white">Wealth</span>
             </a>
-            <a href="#a" className="flex space-x-4 items-center">
+            <a href="#a" className="flex md:space-x-4 space-x-2 items-center">
               <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="17.5" cy="17.5" r="16.5" stroke={theme === 'light' ? '#000' : '#fff'} strokeWidth="2" />
                 <circle cx="17.5" cy="17.5" r="4.5" stroke={theme === 'light' ? '#000' : '#fff'} strokeWidth="2" />
@@ -101,9 +101,9 @@ const Home = () => {
                 <path d="M17.5001 12.9996L17.5002 1.74963" stroke={theme === 'light' ? '#000' : '#fff'} strokeWidth="2" />
                 <path d="M17.5 34L17.5 22" stroke={theme === 'light' ? '#000' : '#fff'} strokeWidth="2" />
               </svg>
-              <span className="text-3xl font-trirong font-medium capitalize dark:text-white">Capital</span>
+              <span className="md:text-3xl font-trirong font-medium capitalize dark:text-white">Capital</span>
             </a>
-            <a href="#a" className="flex space-x-4 items-center">
+            <a href="#a" className="flex md:space-x-4 space-x-2 items-center">
               <svg width="68" height="51" viewBox="0 0 68 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="16.5" cy="30.5" r="9.5" stroke={theme === 'light' ? '#000' : '#fff'} strokeWidth="2" />
                 <circle cx="48.5" cy="30.5" r="9.5" stroke={theme === 'light' ? '#000' : '#fff'} strokeWidth="2" />
@@ -111,7 +111,7 @@ const Home = () => {
                 <circle cx="58.5" cy="17.5" r="1.5" fill={theme === 'light' ? '#000' : '#fff'} />
                 <path d="M31 35C31.2564 35 32.0154 35 33 35" stroke={theme === 'light' ? '#000' : '#fff'} strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              <span className="text-3xl font-trirong font-medium capitalize dark:text-white">Business Solutions</span>
+              <span className="md:text-3xl font-trirong font-medium capitalize dark:text-white">Business Solutions</span>
             </a>
           </div>
         </div>
@@ -123,13 +123,13 @@ const Home = () => {
               <h1 className="text-lg text-orange font-medium uppercase">Lawrence Price Business Solution</h1>
             </AttentionSeeker>
             <Fade direction="down">
-              <h1 className="md:text-7xl text-4xl md:pt-16 capitalize font-trirong dark:text-white">
+              <h1 className="md:text-7xl text-3xl md:pt-16 pt-6 capitalize font-trirong dark:text-white">
                 Business
                 Strategic Alliance
               </h1>
             </Fade>
             <AttentionSeeker effect="pulse">
-              <p className="font-medium text-coregray md:text-4xl text-3xl md:pt-10 pt-4 dark:text-gray-400">
+              <p className="font-medium text-coregray md:text-4xl text-2xl md:pt-10 pt-4 dark:text-gray-400">
                 We engage in early-stage seed to help
                 entrepreneurs launch their businesses
                 and guide these businesses through
@@ -338,8 +338,8 @@ const Home = () => {
         <div className="relative">
           <div className="absolute md:px-16 px-5 py-16 md:py-40">
             <h1 className="text-lg text-white font-bold uppercase">LP Business Solution</h1>
-            <h1 className="font-trirong font-semibold md:text-4rem text-5xl text-white md:pt-96 pt-5">IoT in Agriculture</h1>
-            <h1 className="font-medium text-5xl text-white capitalize md:pt-6">Sustainable Goals</h1>
+            <h1 className="font-trirong font-semibold md:text-4rem text-4xl text-white md:pt-96 pt-5">IoT in Agriculture</h1>
+            <h1 className="font-medium md:text-5xl text-3xl text-white capitalize md:pt-6">Sustainable Goals</h1>
             <div>
               <button type="button" className="flex text-white text-lg font-medium space-x-2 items-center mt-6">
                 <span>Learn How</span>
@@ -364,13 +364,13 @@ const Home = () => {
               <h1 className="text-lg text-orange font-medium uppercase">Lawrence price Capital</h1>
             </AttentionSeeker>
             <Fade direction="down">
-              <h1 className="md:text-7xl text-4xl md:pt-16 capitalize font-trirong dark:text-white">
+              <h1 className="md:text-7xl text-3xl md:pt-16 pt-10 capitalize font-trirong dark:text-white">
                 True Investments
                 Quality Invest
               </h1>
             </Fade>
             <AttentionSeeker effect="pulse">
-              <p className="font-medium text-coregray md:text-4xl text-3xl md:pt-10 pt-4 dark:text-gray-400">
+              <p className="font-medium text-coregray md:text-4xl text-2xl md:pt-10 pt-4 dark:text-gray-400">
                 We engage in early-stage seed to help
                 entrepreneurs launch their businesses
                 and guide these businesses through
@@ -407,10 +407,10 @@ const Home = () => {
         <div className="md:px-16 px-5 py-20 bg-lightgrey dark:bg-kiwi md:flex md:space-x-8 md:space-y-0 space-y-10 md:py-40">
           <div className="flex-1">
             <Fade direction="down">
-              <h1 className="capitalize text-4rem font-trirong pt-6 dark:text-white">New Way</h1>
+              <h1 className="capitalize md:text-4rem text-5xl font-trirong pt-6 dark:text-white">New Way</h1>
             </Fade>
             <Fade direction="up">
-              <h1 className="text-4xl text-coregray pt-3 dark:text-gray-400 md:pb-0 ">True Investment</h1>
+              <h1 className="md:text-4xl text-2xl text-coregray pt-3 dark:text-gray-400 md:pb-0 ">True Investment</h1>
             </Fade>
           </div>
           <div className="flex-1 relative">

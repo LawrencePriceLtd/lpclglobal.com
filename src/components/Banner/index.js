@@ -14,7 +14,7 @@ const Banner = ({ image }) => (
         </h1>
       </Slide>
       <AttentionSeeker effect="pulse">
-        <h1 className="text-4xl md:pt-10 pt-4 dark:text-gray-400">
+        <h1 className="md:text-4xl text-3xl md:pt-10 pt-4 dark:text-gray-400">
           Driving business Innovation across Africa
           and beyond
         </h1>

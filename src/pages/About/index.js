@@ -32,12 +32,12 @@ const About = () => (
         </div>
         <div>
           <h1 className="text-2xl uppercase text-textgrey font-medium">We</h1>
-          <h1 className="capitalize font-trirong text-4rem py-4 dark:text-white">
+          <h1 className="capitalize font-trirong md:text-4rem text-4xl py-4 dark:text-white">
             Driving Business Growth
             <br />
             Accross Africa and Beyond
           </h1>
-          <h1 className="text-5xl font-medium text-coregray capitalize dark:text-orange">Driving the frontiers for business innovation.</h1>
+          <h1 className="md:text-5xl text-3xl font-medium text-coregray capitalize dark:text-orange">Driving the frontiers for business innovation.</h1>
         </div>
       </div>
     </section>
@@ -57,8 +57,8 @@ const About = () => (
           </Rotate>
         </div>
         <div className="md:pl-8">
-          <h1 className="text-5xl font-trirong font-medium dark:text-white md:pt-16">Lawrence Price & Company</h1>
-          <h1 className="text-2xl text-textgrey dark:text-orange uppercase pt-5">Management Team</h1>
+          <h1 className="md:text-5xl text-3xl font-trirong font-medium dark:text-white md:pt-16">Lawrence Price & Company</h1>
+          <h1 className="text-2xl text-textgrey dark:text-orange uppercase pt-5 md:mb-0 mb-8">Management Team</h1>
         </div>
         <div>
           <div className="md:pt-44">
@@ -92,12 +92,12 @@ const About = () => (
       <div className="relative">
         <div className="absolute md:px-16 px-5 py-16 md:py-40">
           <h1 className="text-lg text-white font-bold uppercase">Lawrence Price & Company.</h1>
-          <h1 className="font-trirong font-semibold md:text-4rem text-4xl text-white md:pt-96 pt-5">
+          <h1 className="font-trirong font-semibold md:text-4rem text-3xl text-white md:pt-96 pt-5">
             The Future of Tech &
             <br />
             Coporate Growth in Africa
           </h1>
-          <h1 className="font-medium text-5xl text-white capitalize md:pt-6">Sustainable Goals</h1>
+          <h1 className="font-medium md:text-5xl text-2xl text-white capitalize md:pt-6">Sustainable Goals</h1>
           <div>
             <button type="button" className="flex text-white text-lg font-medium space-x-2 items-center mt-6">
               <span>Learn How</span>

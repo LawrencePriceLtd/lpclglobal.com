@@ -22,15 +22,15 @@ const Team = (props) => (
     <section>
       <div className="md:px-16 md:py-32 py-16 px-5">
         <div className="md:pr-32">
-          <h1 className="text-5xl font-trirong capitalize font-medium dark:text-white">Lawrence Price & Company</h1>
-          <p className="text-24px text-coregray pt-4 dark:text-gray-300">
+          <h1 className="md:text-5xl text-3xl font-trirong capitalize font-medium dark:text-white">Lawrence Price & Company</h1>
+          <p className="md:text-24px text-lg text-coregray pt-4 dark:text-gray-300">
             That is just what I was about to venture to propose,” returned the doctor
             with a smile.
             But the words were hardly uttered, before the smile was struck out of his face
             and succeeded by an expression of such abject terror and despair, as froze the very
             blood of the two gentlemen below.
           </p>
-          <p className="pt-2 text-coregray text-24px dark:text-gray-300">
+          <p className="pt-2 text-coregray md:text-24px text-lg dark:text-gray-300">
             They saw it but for a glimpse for the window was instantly thrust down;
             but that glimpse had been sufficient, and they turned and left the court
             without a word.
@@ -54,8 +54,8 @@ const Team = (props) => (
           </Rotate>
         </div>
         <div className="md:pl-8">
-          <h1 className="text-5xl font-trirong font-medium dark:text-white md:pt-16">Lawrence Price & Company</h1>
-          <h1 className="text-2xl text-textgrey dark:text-orange uppercase pt-5">Management Team</h1>
+          <h1 className="md:text-5xl text-3xl font-trirong font-medium dark:text-white md:pt-16 pt-10">Lawrence Price & Company</h1>
+          <h1 className="text-2xl text-textgrey dark:text-orange uppercase pt-5 md:mb-0 mb-8">Management Team</h1>
         </div>
         <div>
           <div className="md:pt-44">
@@ -87,8 +87,8 @@ const Team = (props) => (
     </section>
     <section className="bg-gray1 dark:bg-kiwi">
       <div className="md:px-16 px-5 py-16 md:py-40">
-        <h1 className="text-4rem font-trirong text-white font-medium">The Future is Now.</h1>
-        <p className="text-4xl pt-4 md:pb-0 pb-8 text-white font-medium">
+        <h1 className="md:text-4rem text-5xl font-trirong text-white font-medium">The Future is Now.</h1>
+        <p className="md:text-4xl text-2xl pt-4 md:pb-0 pb-8 text-white font-medium">
           Creating and building Solutions
           <br />
           to Africa’s Business Problems.
