@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import Carousel from 'react-multi-carousel';
 import {
   AttentionSeeker, Flip, Fade,
@@ -164,11 +165,11 @@ const Home = () => {
                 <h1 className="text-xs text-orange uppercase font-bold">Report</h1>
                 <h1 className="text-textgrey text-8px font-medium uppercase">Lawrence Price business solution</h1>
               </div>
-              <a href="3a" className="text-4xl font-trirong font-medium pt-3 dark:text-white hover:text-orange">
+              <Link to="/report" className="text-4xl font-trirong font-medium pt-3 dark:text-white hover:text-orange">
                 The First and Best Way, Business
                 <br />
                 Entry Innovation for 2021.
-              </a>
+              </Link>
               <div className="md:flex md:space-x-6 items-end">
                 <p className="text-coregray text-lg pt-6 dark:text-gray-300">
                   Bless me, Poole, what brings you here?” he cried; and then taking

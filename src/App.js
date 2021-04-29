@@ -9,6 +9,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Team from './pages/Team';
 import Bio from './pages/Bio';
+import Report from './pages/Report';
 
 const routes = [
   {
@@ -29,6 +30,11 @@ const routes = [
   {
     path: '/contact',
     component: Contact,
+    exact: true,
+  },
+  {
+    path: '/report',
+    component: Report,
     exact: true,
   },
   {
