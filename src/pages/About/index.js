@@ -65,12 +65,7 @@ const About = () => (
             <div className="bg-altgrey dark:bg-gray-900 md:px-8 rounded-tl-2xl rounded-tr-2xl relative">
               <div className="md:flex items-center md:space-x-6 md:space-y-0 space-y-8 relative md:-top-24">
                 {bios?.slice(0, 4).map((bio) => (
-                  <BioCard
-                    name={bio.name}
-                    imageUrl={bio.imageUrl}
-                    position={bio.position}
-                    id={bio.id}
-                  />
+                  <BioCard bio={bio} />
                 ))}
               </div>
               <div className="flex justify-end pb-3 md:pt-0 pt-5 pr-12">
