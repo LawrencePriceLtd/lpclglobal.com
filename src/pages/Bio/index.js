@@ -7,9 +7,8 @@ import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 
 const Bio = () => {
-  const { state: { bios } } = useLocation();
-  // console.log(bios, 'state is cool');
   const { theme } = useContext(ThemeContext);
+  const { state: { bios } } = useLocation();
 
   return (
     <>
@@ -56,13 +55,11 @@ const Bio = () => {
           </div>
           <div className="md:w-1/2">
             <div className="md:pt-28">
-              <Slide direction="down">
-                <img
-                  src={bios?.imageUrl}
-                  className="block md:h-492px md:w-360px w-full object-cover"
-                  alt={bios?.name}
-                />
-              </Slide>
+              <img
+                src={bios?.imageUrl}
+                className="block md:h-492px md:w-360px w-full object-cover"
+                alt={bios?.name}
+              />
               <Slide direction="up">
                 <blockquote className="text-5xl pt-16 md:pt-24 text-coregray dark:text-white">
                   <span className="block pb-20">

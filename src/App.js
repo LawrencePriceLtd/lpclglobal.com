@@ -10,6 +10,9 @@ import Contact from './pages/Contact';
 import Team from './pages/Team';
 import Bio from './pages/Bio';
 import Report from './pages/Report';
+import Blog from './pages/Blog';
+import ArticleOne from './pages/ArticleOne';
+import ArticleTwo from './pages/ArticleTwo';
 
 const routes = [
   {
@@ -35,6 +38,21 @@ const routes = [
   {
     path: '/report',
     component: Report,
+    exact: true,
+  },
+  {
+    path: '/blog',
+    component: Blog,
+    exact: true,
+  },
+  {
+    path: '/blog/article/1',
+    component: ArticleOne,
+    exact: true,
+  },
+  {
+    path: '/blog/article/2',
+    component: ArticleTwo,
     exact: true,
   },
   {

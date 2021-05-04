@@ -48,7 +48,7 @@ const Home = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className="">
+    <div className="md:overflow-x-hidden">
       <Navbar />
       <section>
         <Banner image={Sphere} />

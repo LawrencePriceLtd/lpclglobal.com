@@ -8,8 +8,17 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <section className="md:py-32 py-10" id="Section6">
-        <div className="md:px-24 px-5 md:flex md:space-x-20">
+      <section>
+        <div className="bg-black dark:bg-kiwi md:px-16 md:py-44">
+          <div className="md:pl-24">
+            <h1 className="uppercase text-2xl text-white font-bold">Contact lp</h1>
+            <h1 className="md:text-7xl text-5xl font-trirong text-white font-medium capitalize pt-6">Holding Contact</h1>
+          </div>
+        </div>
+      </section>
+      <section className="md:pt-48 md:pb-40 pt-10 pb-10" id="Section6">
+        <h1 className="text-5xl font-trirong font-medium md:pb-28 md:px-36 dark:text-white">General Contact</h1>
+        <div className="md:px-36 px-5 md:flex md:space-x-20">
           <div className="md:w-3/5">
             <form className="">
               <div className="border border-gray-400 dark:bg-gray-800 dark:border-gray-700 rounded-lg py-10">
@@ -18,11 +27,16 @@ const Contact = () => {
                 <input type="text" className="w-full dark:text-gray-400 dark:bg-gray-800 block py-4 px-8 border-t dark:border-gray-700 border-gray-400 focus:outline-none" placeholder="EMAIL" />
                 <input type="text" className="w-full dark:text-gray-400 dark:bg-gray-800 block py-4 px-8 border-t dark:border-gray-700 border-gray-400 focus:outline-none" placeholder="COMPANY NAME" />
                 <input type="text" className="w-full dark:text-gray-400 dark:bg-gray-800 block py-4 px-8 border-t dark:border-gray-700 border-gray-400 focus:outline-none" placeholder="SUBJECT" />
-                <textarea type="text" rows="4" className="w-full dark:text-gray-400 dark:bg-gray-800 block py-4 px-8 border-t dark:border-gray-700 border-gray-400 focus:outline-none resize-none" placeholder="MESSAGE" />
+                <textarea type="text" rows="8" className="w-full dark:text-gray-400 dark:bg-gray-800 block py-4 px-8 border-t dark:border-gray-700 border-gray-400 focus:outline-none resize-none" placeholder="MESSAGE" />
               </div>
-              <div className="mt-12 md:ml-12">
-                <button className="flex items-center space-x-3 text-2xl font-bold text-blackboxgreen" type="submit">
-                  <span className="block h-8 w-8 bg-blackboxgreen rounded-full" />
+              <div className="mt-12 md:ml-1">
+                <button className="flex items-center space-x-3 text-2xl font-bold text-orange" type="submit">
+                  <span>
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="26" cy="21" r="14.75" stroke="#FF8300" strokeWidth="2.5" />
+                      <path d="M23 15L29 21.2572L23 27" stroke="#FF8300" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
                   <span>Send</span>
                 </button>
               </div>
@@ -31,7 +45,7 @@ const Contact = () => {
           </div>
           <div className="md:w-2/5 ">
             <div>
-              <div>
+              <div className="md:pt-8">
                 <svg width="123" height="154" viewBox="0 0 123 154" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M109.47 108.416H96.2007V13.5521C96.2007 12.8717 95.65 12.3201 94.9707 12.3201H50.0301C49.3508 12.3201 48.8001 12.8717 48.8001 13.5521V43.1475L28.0234 43.2452C27.3465 43.2482 26.7994 43.7992 26.7994 44.4772V108.416H13.53C12.8508 108.416 12.3 108.968 12.3 109.648C12.3 110.328 12.8508 110.88 13.53 110.88H109.47C110.149 110.88 110.7 110.328 110.7 109.648C110.7 108.968 110.149 108.416 109.47 108.416ZM93.7407 14.7841V108.416H82.7061V95.1468C82.7061 94.4664 82.1554 93.9148 81.4761 93.9148H63.5246C62.8454 93.9148 62.2946 94.4664 62.2946 95.1468V108.416H51.2601V14.7841H93.7407ZM80.2461 108.416H64.7546V96.3788H80.2461V108.416ZM48.8001 82.1344H29.2594V71.6937H48.8001V82.1344ZM48.8001 69.2297H29.2594V58.7884H48.8001V69.2297ZM29.2594 84.5984H48.8001V95.0397H29.2594V84.5984ZM48.8001 45.6115V56.3244H29.2594V45.7032L48.8001 45.6115ZM29.2594 97.5037H48.8001V108.416H29.2594V97.5037Z" fill={theme === 'light' ? '#707173' : 'white'} />
                   <path d="M62.0519 28.4275C62.7312 28.4275 63.2819 27.8758 63.2819 27.1955V22.4564C63.2819 21.776 62.7312 21.2244 62.0519 21.2244C61.3726 21.2244 60.8219 21.776 60.8219 22.4564V27.1955C60.8219 27.8758 61.3726 28.4275 62.0519 28.4275Z" fill={theme === 'light' ? '#707173' : 'white'} />
@@ -51,8 +65,32 @@ const Contact = () => {
                   <path d="M82.9487 84.5984C83.628 84.5984 84.1787 84.0467 84.1787 83.3664V78.6273C84.1787 77.9469 83.628 77.3953 82.9487 77.3953C82.2695 77.3953 81.7188 77.9469 81.7188 78.6273V83.3664C81.7188 84.0467 82.2695 84.5984 82.9487 84.5984Z" fill={theme === 'light' ? '#707173' : 'white'} />
                 </svg>
               </div>
-              <h1 className="text-4xl text-blackboxgreen">Lagos</h1>
-              <p className="text-2xl py-4 dark:text-gray-400">
+              <h1 className="text-2xl text-orange font-trirong">Lagos</h1>
+              <p className="text-lg py-4 dark:text-gray-400">
+                No. 3 Akin Osiyemi Street Off
+                Allen Avenue, Lagos, 100244, Nigeria.
+              </p>
+              <div className="flex items-center space-x-2">
+                <span className="text-14 dark:text-gray-400">HQ</span>
+                <span>
+                  <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clipPath="url(#clip0)">
+                      <path d="M10.4357 0.365835C9.67296 0.133031 8.84089 0 7.99149 0C5.54729 0 3.34577 1.06425 1.87231 2.74376L5.6513 5.78685L10.4357 0.365835Z" fill="#1A73E8" />
+                      <path d="M1.87216 2.74365C0.710726 4.07396 0 5.80336 0 7.6658C0 9.11251 0.294691 10.2765 0.7974 11.3242L5.65114 5.78674L1.87216 2.74365Z" fill="#EA4335" />
+                      <path d="M8.00853 4.73936C9.70734 4.73936 11.0768 6.05304 11.0768 7.68267C11.0768 8.39771 10.7994 9.06287 10.3487 9.57836C10.3487 9.57836 12.7583 6.81797 15.1158 4.14072C14.145 2.3448 12.4636 0.981235 10.4354 0.365967L5.651 5.78698C6.22305 5.15508 7.05512 4.73936 8.00853 4.73936Z" fill="#4285F4" />
+                      <path d="M8.00863 10.6092C6.30982 10.6092 4.94037 9.29556 4.94037 7.66593C4.94037 6.95089 5.20039 6.28573 5.6511 5.78687L0.797363 11.3243C1.62943 13.0869 3.01621 14.517 4.43766 16.2963L10.3488 9.56162C9.77677 10.2101 8.94471 10.6092 8.00863 10.6092Z" fill="#FBBC04" />
+                      <path d="M10.2448 18.1588C12.9143 14.1512 16.0173 12.3387 16.0173 7.68258C16.0173 6.40215 15.6879 5.20487 15.1158 4.14062L4.43762 16.2963C4.88833 16.8617 5.35637 17.5102 5.80707 18.1754C7.43654 20.5866 6.98583 22.0167 8.02592 22.0167C9.06601 22.0167 8.6153 20.57 10.2448 18.1588Z" fill="#34A853" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0">
+                        <rect width="16" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+              </div>
+              <h1 className="text-2xl text-textgrey font-trirong capitalize pt-12">Zambia</h1>
+              <p className="text-lg py-4 dark:text-gray-400">
                 No. 3 Akin Osiyemi Street Off
                 Allen Avenue, Lagos, 100244, Nigeria.
               </p>
@@ -78,15 +116,15 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="md:mt-24 md:px-16 px-5 mt-10">
-          <div className="md:flex items-center md:space-x-16 border-b border-t border-gray-300 md:py-16 py-10 md:px-16 md:space-y-0 space-y-10">
+        <div className="md:mt-24 md:px-28 px-5 mt-10">
+          <div className="md:flex items-center md:space-x-10 border-b border-t border-gray-300 md:py-16 py-10 md:px-16 md:space-y-0 space-y-10">
             <div className="flex items-center space-x-5">
               <span>
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M28.0792 30.6225C28.0176 30.6841 27.956 30.7457 27.8856 30.7985C27.8592 30.8249 27.7008 30.9481 27.7712 30.8953C27.8416 30.8425 27.648 30.9833 27.6216 31.0009C27.5512 31.0449 27.472 31.0977 27.4016 31.1417C27.2608 31.2209 27.1112 31.3001 26.9616 31.3617C27.1112 31.2913 26.9 31.3793 26.8472 31.4057C26.7592 31.4409 26.6712 31.4673 26.5832 31.4937C26.416 31.5465 26.2488 31.5817 26.0816 31.6169C25.9848 31.6345 25.8968 31.6521 25.8 31.6697C25.7912 31.6697 25.6592 31.6873 25.7472 31.6785C25.844 31.6697 25.668 31.6873 25.6504 31.6873C25.2456 31.7225 24.8496 31.7313 24.4536 31.7137C23.5912 31.6697 22.7992 31.5113 21.9016 31.2473C20.916 30.9657 19.9568 30.5873 19.0328 30.1385C14.3424 27.8681 10.2152 24.2161 7.05605 20.0889C5.61285 18.2057 4.31045 16.1377 3.40405 13.9377C2.69125 12.2129 2.18965 10.4529 2.29525 8.64892C2.30405 8.55212 2.31285 8.44652 2.32165 8.34972C2.32165 8.30572 2.33045 8.26172 2.33925 8.22652C2.33925 8.24412 2.32165 8.35852 2.33925 8.25292C2.36565 8.06812 2.40085 7.87452 2.45365 7.68971C2.49765 7.52252 2.54165 7.35532 2.60325 7.19692C2.62085 7.15292 2.70005 6.94172 2.67365 7.01212C2.64725 7.08252 2.73525 6.88012 2.75285 6.84492C2.82325 6.69532 2.91125 6.55452 2.99925 6.42252C3.04325 6.35212 3.09605 6.28172 3.14885 6.21132C3.05205 6.34332 3.18405 6.16732 3.21925 6.13212C3.31605 6.01772 3.43045 5.91212 3.53605 5.80652C4.48645 4.85612 5.42805 3.91452 6.37845 2.96412C6.64245 2.70012 6.95045 2.26892 7.35525 2.26892C7.76885 2.26892 8.07685 2.70892 8.34085 2.97292C9.30005 3.93212 10.2504 4.88252 11.2096 5.84172C11.544 6.17612 11.7376 6.56332 11.3768 6.97692C11.0248 7.38172 10.6112 7.74252 10.2329 8.12092C9.30885 9.04492 8.26165 9.88091 8.02405 11.2361C7.66325 13.2865 8.52565 15.4073 9.54645 17.1585C10.928 19.5257 12.8464 21.5673 15.0288 23.2217C16.8328 24.5945 18.9624 25.7649 21.2416 26.0377C22.104 26.1433 22.984 26.0553 23.776 25.6857C24.2688 25.4569 24.6384 25.0785 25.0168 24.7001C25.5272 24.1897 26.0464 23.6705 26.5568 23.1601C26.8736 22.8433 27.2256 22.3329 27.7272 22.4737C28.0704 22.5705 28.3872 23.0017 28.6248 23.2481C29.1528 23.7761 29.672 24.2953 30.2 24.8233C30.6224 25.2457 31.036 25.6593 31.4584 26.0817C31.784 26.4073 31.9072 26.8033 31.564 27.1817C30.728 28.0969 29.804 28.9417 28.924 29.8217C28.6248 30.0769 28.352 30.3497 28.0792 30.6225C27.2784 31.4233 28.5192 32.6729 29.32 31.8633C30.1824 31.0009 31.0536 30.1297 31.916 29.2673C32.224 28.9593 32.5408 28.6689 32.8312 28.3433C33.7288 27.3401 33.6936 25.9057 32.7784 24.9289C31.9072 24.0049 30.9744 23.1249 30.068 22.2185C29.7512 21.9017 29.4432 21.5497 29.0912 21.2593C28.088 20.4233 26.6888 20.5289 25.7648 21.4089C24.9288 22.2009 24.1368 23.0457 23.3184 23.8553C23.292 23.8817 23.2656 23.9081 23.2392 23.9257C23.1424 24.0137 23.3536 23.8465 23.2392 23.9257C23.1776 23.9697 23.116 24.0049 23.0544 24.0401C23.0016 24.0665 22.808 24.1633 22.9576 24.1017C22.8608 24.1369 22.764 24.1721 22.6672 24.1985C22.5792 24.2249 22.4824 24.2425 22.3944 24.2601C22.2008 24.3041 22.4032 24.2689 22.2536 24.2777C22.0424 24.2953 21.84 24.2953 21.6288 24.2865C20.8104 24.2425 19.7984 23.9345 18.9536 23.5473C16.4896 22.4121 14.3512 20.5905 12.6264 18.5137C11.7992 17.5193 11.0776 16.4281 10.5144 15.2577C10.2856 14.7913 10.1008 14.3073 9.95125 13.8145C9.81925 13.3833 9.71365 12.8729 9.68725 12.5385C9.66965 12.3273 9.66965 12.1161 9.67845 11.9049C9.68725 11.8169 9.68725 11.7289 9.69605 11.6497C9.67845 11.8081 9.72245 11.5265 9.73125 11.4737C9.74885 11.3857 9.78405 11.2977 9.81045 11.2097C9.81925 11.1745 9.83685 11.1393 9.84565 11.0953C9.79285 11.2449 9.82805 11.1305 9.84565 11.0953C9.88085 11.0249 9.91605 10.9633 9.95125 10.8929C9.97765 10.8489 10.136 10.6289 10.0304 10.7697C10.3648 10.3649 10.7784 10.0129 11.148 9.64331C11.6144 9.17691 12.0808 8.71932 12.5384 8.25292C13.3568 7.41692 13.5856 6.11452 12.8992 5.12012C12.6176 4.71532 12.2216 4.37212 11.8696 4.02012C11.3152 3.46572 10.7608 2.91132 10.2152 2.36572C9.83685 1.98732 9.46725 1.60012 9.08005 1.23052C8.20885 0.394517 6.88005 0.227317 5.88565 0.966517C5.49845 1.25692 5.17285 1.62652 4.83845 1.96972C4.27525 2.53292 3.71205 3.09612 3.14005 3.66812C2.25125 4.55692 1.39765 5.36652 0.931252 6.57212C0.288852 8.24412 0.464851 10.1713 0.869651 11.8785C1.41525 14.1401 2.45365 16.2961 3.66805 18.2673C6.60725 23.0457 10.7872 27.2345 15.5392 30.2089C17.5192 31.4497 19.6752 32.5057 21.9456 33.0777C23.6616 33.5089 25.5976 33.7113 27.3048 33.0953C28.0528 32.8225 28.7392 32.4265 29.3112 31.8633C30.1296 31.0801 28.8888 29.8305 28.0792 30.6225Z" fill={theme === 'light' ? '#707173' : 'orange'} />
                 </svg>
               </span>
-              <span className="text-2xl text-darkgrays dark:text-gray-300">+234 806 000 0000</span>
+              <span className="text-24px text-gray1 dark:text-gray-300">+234 806 000 0000</span>
             </div>
             <div className="flex items-center space-x-5">
               <span>
@@ -94,10 +132,10 @@ const Contact = () => {
                   <path d="M40.345 13.6822V27.3986C40.345 30.3239 37.9075 32.7604 34.9975 32.7604H6.00253C3.06253 32.7604 0.655029 30.3465 0.655029 27.3986V5.80121C0.655029 2.84585 3.05503 0.439453 6.00253 0.439453H34.9975C37.93 0.439453 40.345 2.86089 40.345 5.80121V13.6822ZM37.8475 9.81689L24.97 17.6903C22.1425 19.4124 18.7825 19.3823 15.955 17.6978L3.15253 10.1026V27.3986C3.15253 28.9628 4.44253 30.2562 6.00253 30.2562H34.9975C36.535 30.2562 37.8475 28.9478 37.8475 27.3986V9.81689ZM3.15253 7.19993L17.2225 15.5471C19.2475 16.7578 21.6475 16.7879 23.665 15.5546L37.8475 6.88409V5.80121C37.8475 4.24457 36.55 2.94361 34.9975 2.94361H6.00253C4.44253 2.94361 3.15253 4.22953 3.15253 5.80121V7.19993Z" fill={theme === 'light' ? '#707173' : 'orange'} />
                 </svg>
               </span>
-              <span className="text-2xl text-darkgrays dark:text-gray-300">info@blackbox.com</span>
+              <span className="text-24px text-gray1 dark:text-gray-300">info@lawrenceprice.com</span>
             </div>
             <div className="pb-6">
-              <h1 className="text-3xl font-medium pb-4 text-darkgrays dark:text-white md:pl-16">Connect with Us</h1>
+              <h1 className="text-24px pb-4 text-gray1 dark:text-white md:pl-16">Connect with Us</h1>
               <div className="flex items-center space-x-3 md:pl-12">
                 <a href="https://www.facebook.com/TheBlackboxAfrica" target="_blank" rel="noreferrer" className="block">
                   <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">

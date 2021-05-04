@@ -10,9 +10,6 @@ const Footer = () => {
   return (
     <>
       <div className="bg-copperblack dark:bg-gray-900 md:pt-32 pt-20 md:pb-10 md:px-24 px-5">
-        <div className="md:flex justify-end">
-          <h1 className="text-white text-5xl font-trirong">Who we are</h1>
-        </div>
         <div className="md:flex md:pt-40 md:pb-40 pb-20">
           <div className="md:w-1/4 pb-10 md:pb-0">
             <Slide direction="down">

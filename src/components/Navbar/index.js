@@ -61,27 +61,13 @@ const Navbar = () => {
             >
               About
             </NavLink>
-            <NavLink
-              to="/subsidiaries"
-              className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6"
-              activeClassName="navly active"
-            >
-              Subsidiaries
-            </NavLink>
-            <NavLink
-              to="/industries"
-              className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6"
-              activeClassName="navly active"
-            >
-              Industries
-            </NavLink>
             <button
               type="button"
               onClick={() => setOpen(!open)}
               className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6 focus:outline-none"
               activeClassName="navly active"
             >
-              <span className={open ? 'text-orange' : 'text-black dark:text-white'}>Products</span>
+              <span className={open ? 'text-orange' : 'text-black dark:text-white'}>Subsidiaries</span>
             </button>
             <NavLink
               to="/contact"
@@ -89,6 +75,13 @@ const Navbar = () => {
               activeClassName="navly active"
             >
               Contact
+            </NavLink>
+            <NavLink
+              to="/blog"
+              className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6"
+              activeClassName="navly active"
+            >
+              Blog
             </NavLink>
             <div
               className="block hover:text-vividblue dark:text-white pb-3 md:pb-0 lg:inline-block font-medium"
