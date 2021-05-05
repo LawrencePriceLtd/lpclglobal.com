@@ -13,6 +13,8 @@ import Report from './pages/Report';
 import Blog from './pages/Blog';
 import ArticleOne from './pages/ArticleOne';
 import ArticleTwo from './pages/ArticleTwo';
+import ArticleThree from './pages/ArticleThree';
+import ArticleFour from './pages/ArticleFour';
 
 const routes = [
   {
@@ -53,6 +55,16 @@ const routes = [
   {
     path: '/blog/article/2',
     component: ArticleTwo,
+    exact: true,
+  },
+  {
+    path: '/blog/article/3',
+    component: ArticleThree,
+    exact: true,
+  },
+  {
+    path: '/blog/article/4',
+    component: ArticleFour,
     exact: true,
   },
   {

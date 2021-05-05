@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar';
 
 // custom styles
 import '../../App.css';
+import ArticleCard from '../../components/ArticleCard';
 
 const ArticleOne = () => {
   // eslint-disable-next-line no-unused-vars
@@ -172,7 +173,7 @@ const ArticleOne = () => {
             </p>
             <div className="md:pt-24 md:pb-32 pt-10 pb-10">
               <img
-                src="https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+                src="https://images.pexels.com/photos/3873177/pexels-photo-3873177.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                 className="w-full md:h-506px object-cover"
                 alt="metrics"
               />
@@ -268,6 +269,26 @@ const ArticleOne = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="md:flex items-center">
+          <div className="md:w-1/2">
+            <ArticleCard
+              tag="Article"
+              title="System Thinking..."
+              link="/blog/article/2"
+              imageUrl="https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            />
+          </div>
+          <div className="md:w-1/2">
+            <ArticleCard
+              tag="Article"
+              title=" Impact of Women"
+              link="/"
+              imageUrl="https://images.pexels.com/photos/462024/pexels-photo-462024.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            />
           </div>
         </div>
       </section>

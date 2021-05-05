@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar';
 
 // custom styles
 import '../../App.css';
+import ArticleCard from '../../components/ArticleCard';
 
 const ArticleTwo = () => {
   // eslint-disable-next-line no-unused-vars
@@ -251,6 +252,26 @@ const ArticleTwo = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="md:flex items-center">
+          <div className="md:w-1/2">
+            <ArticleCard
+              tag="Article"
+              title="System Thinking..."
+              link="/blog/article/2"
+              imageUrl="https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            />
+          </div>
+          <div className="md:w-1/2">
+            <ArticleCard
+              tag="Article"
+              title=" Impact of Women"
+              link="/"
+              imageUrl="https://images.pexels.com/photos/462024/pexels-photo-462024.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            />
           </div>
         </div>
       </section>

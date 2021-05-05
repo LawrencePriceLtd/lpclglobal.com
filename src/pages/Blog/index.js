@@ -23,7 +23,7 @@ const articles = [
     title: 'IMPACT OF WOMEN ON  NIGERIA’S ECONOMY',
     description: 'As Nigeria remains one of the brightest economic spots in Africa...',
     image_url: 'https://images.unsplash.com/photo-1607868894064-2b6e7ed1b324?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmxhY2slMjB3b21lbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-    link: '/blog/article/1',
+    link: '/blog/article/3',
   },
 ];
 const Blog = () => {
@@ -78,34 +78,37 @@ const Blog = () => {
       </section>
       <section className="bg-lightgrey dark:bg-kiwi md:py-40 md:px-16 px-5 py-12">
         <div className="md:flex md:space-x-6 md:space-y-0 space-y-6">
-          {articles?.map((article) => (
-            <div className="md:w-1/3 relative">
-              <div className="bg-white md:w-300px  dark:bg-black absolute bottom-0 left-0 md:px-10 px-5 py-6">
-                <div className="flex space-x-3">
-                  <h1 className="text-6px text-coregray uppercase font-bold">Article</h1>
-                  <h1 className="text-textgrey text-6px font-medium uppercase">{article.category}</h1>
+          {
+
+            articles?.map((article) => (
+              <div className="md:w-1/3 relative">
+                <div className="bg-white md:w-300px  dark:bg-black absolute bottom-0 left-0 md:px-10 px-5 py-6">
+                  <div className="flex space-x-3">
+                    <h1 className="text-6px text-coregray uppercase font-bold">Article</h1>
+                    <h1 className="text-textgrey text-6px font-medium uppercase">{article.category}</h1>
+                  </div>
+                  <Link to={article.link} className="block text-24px font-trirong font-medium pt-2 dark:text-white hover:text-orange">
+                    {article.title}
+                  </Link>
+                  <div className="">
+                    <p className="text-coregray text-sm pt-2 dark:text-gray-300">
+                      {article.description}
+                    </p>
+                    <button className="mt-4" type="button">
+                      <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 7.125C0.447715 7.125 0 7.57272 0 8.125C0 8.67728 0.447715 9.125 1 9.125V7.125ZM26.7071 8.83211C27.0976 8.44158 27.0976 7.80842 26.7071 7.41789L20.3431 1.05393C19.9526 0.663408 19.3195 0.663408 18.9289 1.05393C18.5384 1.44446 18.5384 2.07762 18.9289 2.46815L24.5858 8.125L18.9289 13.7819C18.5384 14.1724 18.5384 14.8055 18.9289 15.1961C19.3195 15.5866 19.9526 15.5866 20.3431 15.1961L26.7071 8.83211ZM1 9.125H26V7.125H1V9.125Z" fill="#FF8300" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
-                <Link to={article.link} className="block text-24px font-trirong font-medium pt-2 dark:text-white hover:text-orange">
-                  {article.title}
-                </Link>
-                <div className="">
-                  <p className="text-coregray text-sm pt-2 dark:text-gray-300">
-                    {article.description}
-                  </p>
-                  <button className="mt-4" type="button">
-                    <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 7.125C0.447715 7.125 0 7.57272 0 8.125C0 8.67728 0.447715 9.125 1 9.125V7.125ZM26.7071 8.83211C27.0976 8.44158 27.0976 7.80842 26.7071 7.41789L20.3431 1.05393C19.9526 0.663408 19.3195 0.663408 18.9289 1.05393C18.5384 1.44446 18.5384 2.07762 18.9289 2.46815L24.5858 8.125L18.9289 13.7819C18.5384 14.1724 18.5384 14.8055 18.9289 15.1961C19.3195 15.5866 19.9526 15.5866 20.3431 15.1961L26.7071 8.83211ZM1 9.125H26V7.125H1V9.125Z" fill="#FF8300" />
-                    </svg>
-                  </button>
-                </div>
+                <img
+                  className="md:h-450px w-full object-cover"
+                  src={article.image_url}
+                  alt="people"
+                />
               </div>
-              <img
-                className="md:h-450px w-full object-cover"
-                src={article.image_url}
-                alt="people"
-              />
-            </div>
-          ))}
+            ))
+          }
         </div>
       </section>
       <Footer />
