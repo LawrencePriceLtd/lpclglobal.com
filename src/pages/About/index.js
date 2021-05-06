@@ -35,7 +35,7 @@ const About = () => {
             </div>
           </div>
           <div>
-            <h1 className="text-2xl uppercase text-textgrey font-medium">We</h1>
+            <h1 className="text-2xl uppercase text-textgrey font-medium md:pb-8">We</h1>
             <h1 className="capitalize font-trirong md:text-4rem text-4xl py-4 dark:text-white">
               Driving Business Growth
               <br />
@@ -95,24 +95,23 @@ const About = () => {
         <div className="relative">
           <div className="absolute md:px-16 px-5 py-16 md:py-40">
             <h1 className="text-lg text-white font-bold uppercase">Lawrence Price & Company.</h1>
-            <h1 className="font-trirong font-semibold md:text-4rem text-3xl text-white md:pt-96 pt-5">
-              The Future of Tech &
-              <br />
-              Coporate Growth in Africa
-            </h1>
+            <Link to="/blog/article/3" className="block font-trirong hover:text-orange font-semibold md:text-4rem text-3xl text-white md:pt-96 pt-5">
+              IMPACT OF WOMEN ON
+              NIGERIA’S ECONOMY
+            </Link>
             <h1 className="font-medium md:text-5xl text-2xl text-white capitalize md:pt-6">Sustainable Goals</h1>
             <div>
-              <button type="button" className="flex text-white text-lg font-medium space-x-2 items-center mt-6">
-                <span>Learn How</span>
+              <Link to="/blog/article/3" className="flex text-white text-lg font-medium space-x-2 items-center mt-6">
+                <span>Read More</span>
                 <span>
                   <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM1 9H26V7H1V9Z" fill="white" />
                   </svg>
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
-          <img className="md:h-900px h-96 w-full md:w-full" src="https://images.pexels.com/photos/712786/pexels-photo-712786.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="leaf" />
+          <img className="md:h-900px h-96 w-full md:w-full" src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1620310381/blackboxlanding/Rectangle_25_nncksq.png" alt="leaf" />
         </div>
       </section>
       <section>

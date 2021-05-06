@@ -88,6 +88,9 @@ const Team = (props) => {
           </div>
         </div>
       </section>
+      <section className="md:py-0">
+        <Partners />
+      </section>
       <section className="bg-gray1 dark:bg-kiwi">
         <div className="md:px-16 px-5 py-16 md:py-40">
           <h1 className="md:text-4rem text-5xl font-trirong text-white font-medium">The Future is Now.</h1>
@@ -102,15 +105,14 @@ const Team = (props) => {
             </Slide>
             <Slide direction="down">
               <img
-                src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1619538093/blackboxlanding/model_wmd6tg.svg"
-                className="absolute right-0 -bottom-1"
+                src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1620310725/blackboxlanding/01_ry9kmw.png"
+                className="md:w-800px absolute right-0 -bottom-16"
                 alt="model"
               />
             </Slide>
           </div>
         </div>
       </section>
-      <Partners />
       <Footer />
     </>
   );

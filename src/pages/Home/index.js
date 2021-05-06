@@ -20,27 +20,31 @@ import Sphere from '../../assets/sphere.svg';
 const articles = [
   {
     category: 'Lawrence Price Wealth',
-    title: 'Future is Now. Take it',
-    description: 'Do you not think it would be a proper compliment to the place?',
-    image_url: 'https://images.pexels.com/photos/5427870/pexels-photo-5427870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    title: 'SYSTEMS THINKING IN THE WORKPLACE',
+    description: 'Systems thinking is a powerful approach to support ....',
+    image_url: 'https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1619445308/blackboxlanding/dg_phnyll.svg',
+    link: '/blog/article/2',
   },
   {
     category: 'Lawrence Price business solution',
-    title: 'Standing Out',
-    description: 'Do you not think it would be a proper compliment to the place?',
-    image_url: 'https://images.pexels.com/photos/3735580/pexels-photo-3735580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    title: 'WOMEN AND BUSINESS 2021',
+    description: 'Africa is the world’s second largest and second most populous continent, ....',
+    image_url: 'https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1618307835/blackboxlanding/smiley-african-woman-working-market_o84h63.jpg',
+    link: '/blog/article/1',
+  },
+  {
+    category: 'Lawrence Price Capital',
+    title: 'IMPACT OF WOMEN ON NIGERIA’S ECONOMY',
+    description: 'As Nigeria remains one of the brightest economic spots in Africa...',
+    image_url: 'https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1620309377/blackboxlanding/Rectangle_001_pyug2n.png',
+    link: '/blog/article/1',
   },
   {
     category: 'Lets create the Future',
-    title: 'Future is Now. Take it',
-    description: 'Do you not think it would be a proper compliment to the place?',
-    image_url: 'https://images.pexels.com/photos/3913025/pexels-photo-3913025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-  },
-  {
-    category: 'Lets create the Future',
-    title: 'Future is Now. Take it',
-    description: 'Do you not think it would be a proper compliment to the place?',
+    title: 'THE EMERGING GIG ECONOMY IN NIGERIA',
+    description: 'The Gig Economy also referred to as the platform economy is ...',
     image_url: 'https://images.pexels.com/photos/3756879/pexels-photo-3756879.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+    link: '/blog/article/4',
   },
 ];
 
@@ -203,11 +207,18 @@ const Home = () => {
               </Fade>
             </div>
             <div className="md:flex">
-              <div>
+              <div className="relative">
+                <div className="absolute bottom-24 left-6">
+                  <h1 className="text-5xl text-white font-trirong font-medium capitalize">
+                    Reduced
+                    Inequality
+                  </h1>
+                  <h1 className="text-4xl text-white font-medium capitalize pt-2">For good.</h1>
+                </div>
                 <img
                   className="md:h-700px h-96 w-full object-cover"
-                  src="https://images.pexels.com/photos/67552/giraffe-tall-mammal-africa-67552.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                  alt="Giraffes"
+                  src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1620308544/blackboxlanding/Rectangle_10_oxrekb.png"
+                  alt="Person"
                 />
               </div>
               <div className="relative">
@@ -217,7 +228,7 @@ const Home = () => {
                 </div>
                 <img
                   className="md:h-700px h-96 w-full object-cover"
-                  src="https://images.pexels.com/photos/3735580/pexels-photo-3735580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1620308558/blackboxlanding/Rectangle_13_ytqsjy.png"
                   alt="Person"
                 />
               </div>
@@ -232,7 +243,7 @@ const Home = () => {
                 </div>
                 <img
                   className="md:h-950px h-96 w-full object-cover"
-                  src="https://images.pexels.com/photos/5427870/pexels-photo-5427870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1620308572/blackboxlanding/Rectangle_14_gvlgiv.png"
                   alt="education"
                 />
               </div>
@@ -243,7 +254,7 @@ const Home = () => {
                 </div>
                 <img
                   className="md:h-950px h-96 w-full object-cover"
-                  src="https://images.pexels.com/photos/3913025/pexels-photo-3913025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1620308591/blackboxlanding/Rectangle_15_lnobgi.png"
                   alt="Person"
                 />
               </div>
@@ -304,23 +315,23 @@ const Home = () => {
             >
               {articles?.map((article) => (
                 <div className="md:w-386px">
-                  <div className="bg-white md:w-300px md:h-210px dark:bg-black absolute bottom-0 left-0 md:px-10 px-5 py-6">
+                  <div className="bg-white md:w-300px dark:bg-black absolute bottom-0 left-0 md:px-10 px-5 py-6">
                     <div className="flex space-x-3">
                       <h1 className="text-6px text-coregray uppercase font-bold">Article</h1>
                       <h1 className="text-textgrey text-6px font-medium uppercase">{article.category}</h1>
                     </div>
-                    <a href="3a" className="block text-2xl font-trirong font-medium pt-2 dark:text-white hover:text-orange">
+                    <Link to={article.link} className="block text-24px font-trirong font-medium pt-2 dark:text-white hover:text-orange">
                       {article.title}
-                    </a>
+                    </Link>
                     <div className="">
                       <p className="text-coregray text-sm pt-2 dark:text-gray-300">
                         {article.description}
                       </p>
-                      <button className="mt-4" type="button">
+                      <Link to={article.link} className="mt-4" type="button">
                         <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 7.125C0.447715 7.125 0 7.57272 0 8.125C0 8.67728 0.447715 9.125 1 9.125V7.125ZM26.7071 8.83211C27.0976 8.44158 27.0976 7.80842 26.7071 7.41789L20.3431 1.05393C19.9526 0.663408 19.3195 0.663408 18.9289 1.05393C18.5384 1.44446 18.5384 2.07762 18.9289 2.46815L24.5858 8.125L18.9289 13.7819C18.5384 14.1724 18.5384 14.8055 18.9289 15.1961C19.3195 15.5866 19.9526 15.5866 20.3431 15.1961L26.7071 8.83211ZM1 9.125H26V7.125H1V9.125Z" fill="#FF8300" />
                         </svg>
-                      </button>
+                      </Link>
                     </div>
                   </div>
                   <img
@@ -337,27 +348,29 @@ const Home = () => {
       <section>
         <div className="relative">
           <div className="absolute md:px-16 px-5 py-16 md:py-40">
-            <h1 className="text-lg text-white font-bold uppercase">LP Business Solution</h1>
-            <h1 className="font-trirong font-semibold md:text-4rem text-4xl text-white md:pt-96 pt-5">IoT in Agriculture</h1>
-            <h1 className="font-medium md:text-5xl text-3xl text-white capitalize md:pt-6">Sustainable Goals</h1>
+            <Link to="/blog/article/3" className="block font-trirong hover:text-orange font-semibold md:text-4rem text-4xl text-white md:pt-96 pt-5">
+              DRIVING ECONOMIC INCLUSION IN
+              THE INFORMAL SECTOR IN AFRICA.
+            </Link>
+            <h1 className="font-medium md:text-5xl text-3xl text-white capitalize md:pt-6">women in business 2021</h1>
             <div>
-              <button type="button" className="flex text-white text-lg font-medium space-x-2 items-center mt-6">
+              <Link to="/blog/article/3" className="flex text-white text-lg font-medium space-x-2 items-center mt-6">
                 <span>Learn How</span>
                 <span>
                   <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM1 9H26V7H1V9Z" fill="white" />
                   </svg>
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
-          <img className="md:h-900px h-96 w-full md:w-full" src="https://images.pexels.com/photos/109391/pexels-photo-109391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="leaf" />
+          <img className="md:h-900px h-96 w-full md:w-full" src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1620308499/blackboxlanding/Rectangle_25_nwkkuj.png" alt="leaf" />
         </div>
       </section>
       <section>
         <Partners />
       </section>
-      <section className="bg-altgrey dark:bg-kiwi">
+      <section className="bg-white dark:bg-kiwi">
         <div className="md:flex items-center md:pl-16 md:pr-0 pr-5 md:space-y-0 space-y-20 px-5 md:py-32 py-20">
           <div className="md:w-1/2">
             <AttentionSeeker>
@@ -377,18 +390,6 @@ const Home = () => {
                 their growth phase.
               </p>
             </AttentionSeeker>
-            <div className="md:pt-16 pt-10">
-              <AttentionSeeker effect="pulse">
-                <button type="button" className="hover:text-yellow-600 text-orange flex items-center space-x-2 text-24px font-bold">
-                  <span>Visit Capital</span>
-                  <span>
-                    <svg width="38" height="20" viewBox="0 0 38 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.5 8.75C0.809644 8.75 0.25 9.30964 0.25 10C0.25 10.6904 0.809644 11.25 1.5 11.25V8.75ZM36.8839 10.8839C37.372 10.3957 37.372 9.60427 36.8839 9.11612L28.9289 1.16117C28.4408 0.67301 27.6493 0.67301 27.1612 1.16117C26.673 1.64932 26.673 2.44078 27.1612 2.92893L34.2322 10L27.1612 17.0711C26.673 17.5592 26.673 18.3507 27.1612 18.8388C27.6493 19.327 28.4408 19.327 28.9289 18.8388L36.8839 10.8839ZM1.5 11.25H36V8.75H1.5V11.25Z" fill="#FF8300" />
-                    </svg>
-                  </span>
-                </button>
-              </AttentionSeeker>
-            </div>
           </div>
           <div className="md:w-1/2">
             <div className="w-full">
@@ -400,63 +401,6 @@ const Home = () => {
                 <path d="M1159.19 109.788C1160.51 109.387 1161.26 107.99 1160.85 106.669L1154.31 85.1427C1153.91 83.8217 1152.51 83.0765 1151.19 83.4783C1149.87 83.88 1149.12 85.2765 1149.52 86.5975L1155.34 105.732L1136.21 111.551C1134.89 111.953 1134.14 113.349 1134.54 114.67C1134.95 115.991 1136.34 116.736 1137.66 116.335L1159.19 109.788ZM430.381 501.593C429.098 502.102 428.471 503.556 428.981 504.839L437.288 525.749C437.798 527.032 439.251 527.659 440.534 527.15C441.818 526.64 442.444 525.186 441.935 523.903L434.55 505.316L453.137 497.932C454.421 497.423 455.048 495.969 454.538 494.686C454.028 493.403 452.575 492.776 451.291 493.286L430.381 501.593ZM1159.64 105.191C1121.96 85.0852 1059.86 71.0694 995.816 94.2977C931.68 117.561 866.11 177.991 821.224 305.802L825.941 307.459C870.478 180.644 935.165 121.616 997.521 98.998C1059.97 76.3451 1120.6 90.0252 1157.29 109.602L1159.64 105.191ZM821.224 305.802C776.749 432.44 702.615 491.206 628.254 513.488C553.735 535.817 478.634 521.61 432.294 501.62L430.314 506.212C477.474 526.555 553.8 541.017 629.689 518.277C705.737 495.49 780.992 435.447 825.941 307.459L821.224 305.802Z" fill="#B1BAC0" />
               </svg>
             </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div className="md:px-16 px-5 py-20 bg-lightgrey dark:bg-kiwi md:flex md:space-x-8 md:space-y-0 space-y-10 md:py-40">
-          <div className="flex-1">
-            <Fade direction="down">
-              <h1 className="capitalize md:text-4rem text-5xl font-trirong pt-6 dark:text-white">New Way</h1>
-            </Fade>
-            <Fade direction="up">
-              <h1 className="md:text-4xl text-2xl text-coregray pt-3 dark:text-gray-400 md:pb-0 ">True Investment</h1>
-            </Fade>
-          </div>
-          <div className="flex-1 relative">
-            <div className="bg-white md:w-300px md:h-210px dark:bg-black absolute bottom-0 left-0 md:px-10 px-5 py-6">
-              <a href="3a" className="block text-2xl font-trirong font-medium pt-2 dark:text-white hover:text-orange">
-                The Future
-                is Now. Take it
-              </a>
-              <div className="">
-                <p className="text-coregray text-8px pt-2 dark:text-gray-300">
-                  Lawrence Price capital
-                </p>
-                <button className="mt-4" type="button">
-                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 7.125C0.447715 7.125 0 7.57272 0 8.125C0 8.67728 0.447715 9.125 1 9.125V7.125ZM26.7071 8.83211C27.0976 8.44158 27.0976 7.80842 26.7071 7.41789L20.3431 1.05393C19.9526 0.663408 19.3195 0.663408 18.9289 1.05393C18.5384 1.44446 18.5384 2.07762 18.9289 2.46815L24.5858 8.125L18.9289 13.7819C18.5384 14.1724 18.5384 14.8055 18.9289 15.1961C19.3195 15.5866 19.9526 15.5866 20.3431 15.1961L26.7071 8.83211ZM1 9.125H26V7.125H1V9.125Z" fill="#FF8300" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <img
-              className="md:h-450px h-96  w-full object-cover"
-              src="https://images.pexels.com/photos/5427870/pexels-photo-5427870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt="people"
-            />
-          </div>
-          <div className="flex-1 relative">
-            <div className="bg-white md:w-300px md:h-210px dark:bg-black absolute bottom-0 left-0 md:px-10 px-5 py-6">
-              <a href="3a" className="block text-2xl font-trirong font-medium pt-2 dark:text-white hover:text-orange">
-                Standing Out
-              </a>
-              <div className="">
-                <p className="text-coregray text-8px pt-2 dark:text-gray-300">
-                  Lawrence Price business solutions
-                </p>
-                <button className="mt-4" type="button">
-                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 7.125C0.447715 7.125 0 7.57272 0 8.125C0 8.67728 0.447715 9.125 1 9.125V7.125ZM26.7071 8.83211C27.0976 8.44158 27.0976 7.80842 26.7071 7.41789L20.3431 1.05393C19.9526 0.663408 19.3195 0.663408 18.9289 1.05393C18.5384 1.44446 18.5384 2.07762 18.9289 2.46815L24.5858 8.125L18.9289 13.7819C18.5384 14.1724 18.5384 14.8055 18.9289 15.1961C19.3195 15.5866 19.9526 15.5866 20.3431 15.1961L26.7071 8.83211ZM1 9.125H26V7.125H1V9.125Z" fill="#FF8300" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <img
-              className="md:h-450px h-96  w-full object-cover"
-              src="https://images.pexels.com/photos/3756879/pexels-photo-3756879.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-              alt="people"
-            />
           </div>
         </div>
       </section>

@@ -9,7 +9,7 @@ import '../../App.css';
 import Products from '../Products';
 
 // eslint-disable-next-line react/prop-types
-const Navbar = () => {
+const Navbar = ({ bgColor, textColor }) => {
   const { theme } = useContext(ThemeContext);
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [open, setOpen] = useState(false);
@@ -18,7 +18,7 @@ const Navbar = () => {
     <>
       <nav
         aria-label="primary"
-        className="relative w-full flex bg-white border-b border-gray-300 dark:border-gray-800 items-center justify-between flex-wrap px-5 dark:bg-kiwi md:px-16 py-2 md:py-4"
+        className={`relative w-full flex border-b border-gray-300 dark:border-gray-800 items-center justify-between flex-wrap px-5 dark:bg-kiwi md:px-16 py-2 md:py-4 ${bgColor}`}
       >
 
         <div className="flex items-center flex-shrink-0 text-white">
@@ -56,7 +56,7 @@ const Navbar = () => {
           <div className="md:flex items-center mt-4 xl:mt-0 lg:mt-0 md:mt-0 sm:mt-0">
             <NavLink
               to="/about"
-              className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6"
+              className={`block hover:text-vividblue uppercase ${textColor} pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6`}
               activeClassName="navly active"
             >
               About
@@ -64,21 +64,21 @@ const Navbar = () => {
             <button
               type="button"
               onClick={() => setOpen(!open)}
-              className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6 focus:outline-none"
+              className={`block hover:text-vividblue uppercase pb-3 ${textColor} md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6 focus:outline-none`}
               activeClassName="navly active"
             >
               <span className={open ? 'text-orange' : 'text-black dark:text-white'}>Subsidiaries</span>
             </button>
             <NavLink
               to="/contact"
-              className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6"
+              className={`block hover:text-vividblue ${textColor} uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6`}
               activeClassName="navly active"
             >
               Contact
             </NavLink>
             <NavLink
               to="/blog"
-              className="block hover:text-vividblue uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6"
+              className={`block hover:text-vividblue ${textColor} uppercase pb-3 md:pb-0 dark:text-white text-sm lg:inline-block md:mr-6`}
               activeClassName="navly active"
             >
               Blog
