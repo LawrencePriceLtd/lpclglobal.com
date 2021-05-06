@@ -22,7 +22,7 @@ const Report = () => {
               <h1 className="text-4xl font-trirong font-medium dark:text-white pt-2">The First and Best Way, Business Entry Innovation for 2021.</h1>
               <p className="text-lg text-coregray pt-5 dark:text-gray-300">
                 Bless me, Poole, what brings you here?” he cried; and then taking
-                a second look at him, “What ails you?” he added; “is the doctor ill
+                a second look at him, “What ails you?” he added; “is the doctor ill, still dummy
               </p>
             </div>
             <div className="md:w-1/5" />
