@@ -69,16 +69,22 @@ const Home = () => {
               to Africa’s Business Problems.
             </h1>
           </AttentionSeeker>
-          <div className="md:flex justify-start items-end md:pt-0 pt-12">
-            <img className="block pt-12" src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1618925885/blackboxlanding/F110-exhaust-half-hero_Sloved_whj4fr.png" alt="mechanism" />
-            <button type="button" className="dark:bg-orange bg-altgrey hover:bg-gray-400 flex items-center space-x-6 text-lg font-medium md:pl-20 pl-10 pr-10 text-coregray  dark:text-white pb-6 md:pt-36 pt-6 flex-grow-0">
-              <span>Start Now</span>
-              <span>
-                <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM1 9H26V7H1V9Z" fill={theme === 'light' ? '#545454' : '#fff'} />
-                </svg>
-              </span>
-            </button>
+          <div className="md:flex items-baseline md:pt-0 pt-12 md:h-400px">
+            <img
+              className="block pt-12 md:w-810px object-cover"
+              src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1620318312/blackboxlanding/Rectangle_19999_vi0yfp.png"
+              alt="mechanism"
+            />
+            <div className="bg-altgrey relative h-full w-full">
+              <button type="button" className="dark:bg-orange w-full absolute bottom-2 flex items-center space-x-6 text-lg font-medium md:pl-20 pl-10 pr-10 text-coregray  dark:text-white pb-6 md:pt-36 pt-6 flex-grow-0">
+                <span>Visit Blog</span>
+                <span>
+                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM1 9H26V7H1V9Z" fill={theme === 'light' ? '#545454' : '#fff'} />
+                  </svg>
+                </span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -161,41 +167,7 @@ const Home = () => {
       <section>
         <BusinessCategory businessType="Lawrence Price Wealth" />
       </section>
-      <section className="bg-lightgrey dark:bg-kiwi">
-        <div className="md:px-16 px-5 md:py-40 py-32 relative">
-          <div className="relative">
-            <div className="bg-white dark:bg-black md:absolute bottom-0 md:left-16 md:px-16 px-5 py-10 md:py-12">
-              <div className="flex justify-between">
-                <h1 className="text-xs text-orange uppercase font-bold">Report</h1>
-                <h1 className="text-textgrey text-8px font-medium uppercase">Lawrence Price business solution</h1>
-              </div>
-              <Link to="/report" className="text-4xl font-trirong font-medium pt-3 dark:text-white hover:text-orange">
-                The First and Best Way, Business
-                <br />
-                Entry Innovation for 2021.
-              </Link>
-              <div className="md:flex md:space-x-6 items-end">
-                <p className="text-coregray text-lg pt-6 dark:text-gray-300">
-                  Bless me, Poole, what brings you here?” he cried; and then taking
-                  <br />
-                  a second look at him, “What ails you?” he added; “is the doctor ill
-                </p>
-                <button className="md:mt-0 mt-8" type="button">
-                  <svg width="76" height="16" viewBox="0 0 76 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM75.2822 8.70711C75.6728 8.31658 75.6728 7.68342 75.2822 7.29289L68.9183 0.928932C68.5278 0.538408 67.8946 0.538408 67.5041 0.928932C67.1135 1.31946 67.1135 1.95262 67.5041 2.34315L73.1609 8L67.5041 13.6569C67.1135 14.0474 67.1135 14.6805 67.5041 15.0711C67.8946 15.4616 68.5278 15.4616 68.9183 15.0711L75.2822 8.70711ZM1 9H74.5751V7H1V9Z" fill="#FF8300" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <img
-              className="md:h-455px w-full object-cover"
-              src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt="people"
-            />
-          </div>
-        </div>
-      </section>
-      <section className="bg-white dark:bg-kiwi">
+      <section className="bg-white dark:bg-kiwi md:py-20">
         <div className="md:flex md:items-end">
           <div className="md:w-1/2">
             <div className="py-12 md:pl-16 pl-5">
@@ -262,7 +234,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="bg-lightgrey dark:bg-kiwi">
+      <section className="bg-white dark:bg-kiwi">
         <div className="md:px-16 px-5 md:py-40 py-32">
           <div className="relative">
             <Carousel
