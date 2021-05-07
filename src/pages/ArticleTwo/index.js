@@ -87,15 +87,7 @@ const ArticleTwo = () => {
               </svg>
             </div>
             <div>
-              <button type="button" className="flex space-x-8 items-center text-orange">
-                <span className="capitalize font-medium text-lg">Download Article</span>
-                <span>
-                  <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 13.0386L1.15898 13.2846C2.08007 14.7101 3.66137 15.571 5.35854 15.571H14.6415C16.3386 15.571 17.9199 14.7101 18.841 13.2846L19 13.0386" stroke="#FF8300" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M10.7502 1.64258C10.7502 1.22836 10.4144 0.892578 10.0002 0.892578C9.58599 0.892578 9.2502 1.22836 9.2502 1.64258L10.7502 1.64258ZM9.2502 12.2659V13.0159H10.7502V12.2659H9.2502ZM7.28689 10.4699C6.93505 10.2513 6.47262 10.3594 6.25404 10.7112C6.03546 11.063 6.14349 11.5255 6.49534 11.744L7.28689 10.4699ZM10.0002 13.0385L9.60443 13.6756C9.8468 13.8261 10.1536 13.8261 10.396 13.6756L10.0002 13.0385ZM13.5051 11.744C13.8569 11.5255 13.9649 11.063 13.7464 10.7112C13.5278 10.3594 13.0654 10.2513 12.7135 10.4699L13.5051 11.744ZM9.2502 1.64258L9.2502 12.2659H10.7502L10.7502 1.64258L9.2502 1.64258ZM6.49534 11.744L9.60443 13.6756L10.396 12.4014L7.28689 10.4699L6.49534 11.744ZM10.396 13.6756L13.5051 11.744L12.7135 10.4699L9.60443 12.4014L10.396 13.6756Z" fill="#FF8300" />
-                  </svg>
-                </span>
-              </button>
+              <p className="text-orange">4 Mins. Read</p>
               <span className="pt-5 flex uppercase space-x-6 text-coregray tracking-widest items-center">
                 <span className="dark:text-gray-300">FREE.</span>
                 <span className="dark:text-gray-300">3 PAGES</span>
@@ -104,7 +96,7 @@ const ArticleTwo = () => {
           </div>
           <div>
             <h1 className="text-4xl font-trirong py-4 capitalize dark:text-white">Systems</h1>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               A system is a complete entity that consists of two or more parts that are
               related to each other and an environment. The human body is a system.
               The human body is made up of different parts – the head, the hands, the legs, etc.
@@ -121,13 +113,13 @@ const ArticleTwo = () => {
               </li>
               <li className="text-lg list-disc mt-5 dark:text-altgrey">A Purpose</li>
             </ul>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               A workplace is a system. The elements of the workplace include
               the members of staff and the office equipment.
               The various units in the workplace are interrelated and they work
               together to achieve the goals of the company.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               There are systems all around us. The family unit is a system. The community,
               which is made up of various families, is also a system.
               The thing with systems is whatever happens to one component
@@ -139,13 +131,13 @@ const ArticleTwo = () => {
               and unregulated rocket launches, has led to serious unintended consequences.
               It has affected humans, animals, the environment, and marine life.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               When we learn to view the world as a series of systems and understand our part
               within them, we can begin to make better decisions, be better teammates,
               and find various ways to be more productive in all areas of our lives.
             </p>
             <h1 className="text-4xl font-trirong pt-4 md:pt-12 pb-8 capitalize dark:text-altgrey">What then is systems thinking?</h1>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               Systems thinking is a way of exploring and developing effective action by looking
               at connected wholes rather than separate parts. Simply put, it is a comprehensive
               approach to investigate factors and interactions that could contribute to a
@@ -153,7 +145,7 @@ const ArticleTwo = () => {
               evidence-based decision making and is essential to the successful delivery
               of complex projects where there are many stakeholders and many possible solutions.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               Within the workplace, it helps teams to become more aware of how they are
               interacting with each other and within the team, it helps them understand
               the outcomes they are producing.
@@ -161,13 +153,13 @@ const ArticleTwo = () => {
             <h1 className="md:text-4xl text-2xl font-trirong pt-4 md:pt-12 pb-8 capitalize dark:text-altgrey">
               Systems thinking within the workplace.
             </h1>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               Systems thinking can serve as a useful tool in the management of an organization.
               It helps explain how the different entities within an organization interact
               and make up the system. The various units within an organization work together
               toward a goal(s).
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               Aside from understanding how various components work with and affect
               each other, employees who are systems thinkers also consider how their
               actions in any component can affect the system.
@@ -175,41 +167,41 @@ const ArticleTwo = () => {
               will be needed and the factors that affect demand. They also know the
               capacity of their organization to meet demand.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               Feedback is a core part of systems thinking in the workplace.
               Acting on relevant feedback allows the leaders in an organization to
               come up with solutions to problems.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               Business leaders, who are also system thinkers, find a way of tying the personal
               goals of the various employees to the overall goals of the company.
               That way, when an employee achieves a personal goal, it means that the company
               goal is a step closer to being achieved. System thinkers employ a management
               style that emphasizes rewarding employees’ accomplishments.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               They regularly update employees about the company’s main objectives and how
               their contributions are each individually important in the achievement of
               those objectives.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               Systems thinking make it easier to spot patterns and feedback loops in the way
               employees, project teams or departments interact. A feedback loop is when you use
               customer or employee feedback to improve on your product or service offering.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               With a systems approach, you realize everything is interrelated. Each person needs
               their co-workers to achieve success. The systems style of thinking gives you the
               tools to integrate interconnectivity, creativity, and productivity
               into your workplace.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               More importantly, systems thinking turns employees into lovers of problems as they
               will now see it as an exciting opportunity. Rather than run away from problems,
               they will see these problems as potential ways to innovate
               and develop their creativity.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               No matter how large or small your organization is, it is ultimately made up of
               different parts. To address problems, you must look at the interconnected dynamics
               of the system. It helps you to come up with long-term solutions to the problems.

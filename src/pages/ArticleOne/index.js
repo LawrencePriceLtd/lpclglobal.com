@@ -87,15 +87,7 @@ const ArticleOne = () => {
               </svg>
             </div>
             <div>
-              <button type="button" className="flex space-x-8 items-center text-orange">
-                <span className="capitalize font-medium text-lg">Download Article</span>
-                <span>
-                  <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 13.0386L1.15898 13.2846C2.08007 14.7101 3.66137 15.571 5.35854 15.571H14.6415C16.3386 15.571 17.9199 14.7101 18.841 13.2846L19 13.0386" stroke="#FF8300" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M10.7502 1.64258C10.7502 1.22836 10.4144 0.892578 10.0002 0.892578C9.58599 0.892578 9.2502 1.22836 9.2502 1.64258L10.7502 1.64258ZM9.2502 12.2659V13.0159H10.7502V12.2659H9.2502ZM7.28689 10.4699C6.93505 10.2513 6.47262 10.3594 6.25404 10.7112C6.03546 11.063 6.14349 11.5255 6.49534 11.744L7.28689 10.4699ZM10.0002 13.0385L9.60443 13.6756C9.8468 13.8261 10.1536 13.8261 10.396 13.6756L10.0002 13.0385ZM13.5051 11.744C13.8569 11.5255 13.9649 11.063 13.7464 10.7112C13.5278 10.3594 13.0654 10.2513 12.7135 10.4699L13.5051 11.744ZM9.2502 1.64258L9.2502 12.2659H10.7502L10.7502 1.64258L9.2502 1.64258ZM6.49534 11.744L9.60443 13.6756L10.396 12.4014L7.28689 10.4699L6.49534 11.744ZM10.396 13.6756L13.5051 11.744L12.7135 10.4699L9.60443 12.4014L10.396 13.6756Z" fill="#FF8300" />
-                  </svg>
-                </span>
-              </button>
+              <p className="text-orange">4 Mins. Read</p>
               <span className="pt-5 flex uppercase space-x-6 text-coregray tracking-widest items-center">
                 <span className="dark:text-gray-300">FREE.</span>
                 <span className="dark:text-gray-300">3 PAGES</span>

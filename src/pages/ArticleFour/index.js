@@ -88,15 +88,7 @@ const ArticleFour = () => {
               </svg>
             </div>
             <div>
-              <button type="button" className="flex space-x-8 items-center text-orange">
-                <span className="capitalize font-medium text-lg">Download Article</span>
-                <span>
-                  <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 13.0386L1.15898 13.2846C2.08007 14.7101 3.66137 15.571 5.35854 15.571H14.6415C16.3386 15.571 17.9199 14.7101 18.841 13.2846L19 13.0386" stroke="#FF8300" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M10.7502 1.64258C10.7502 1.22836 10.4144 0.892578 10.0002 0.892578C9.58599 0.892578 9.2502 1.22836 9.2502 1.64258L10.7502 1.64258ZM9.2502 12.2659V13.0159H10.7502V12.2659H9.2502ZM7.28689 10.4699C6.93505 10.2513 6.47262 10.3594 6.25404 10.7112C6.03546 11.063 6.14349 11.5255 6.49534 11.744L7.28689 10.4699ZM10.0002 13.0385L9.60443 13.6756C9.8468 13.8261 10.1536 13.8261 10.396 13.6756L10.0002 13.0385ZM13.5051 11.744C13.8569 11.5255 13.9649 11.063 13.7464 10.7112C13.5278 10.3594 13.0654 10.2513 12.7135 10.4699L13.5051 11.744ZM9.2502 1.64258L9.2502 12.2659H10.7502L10.7502 1.64258L9.2502 1.64258ZM6.49534 11.744L9.60443 13.6756L10.396 12.4014L7.28689 10.4699L6.49534 11.744ZM10.396 13.6756L13.5051 11.744L12.7135 10.4699L9.60443 12.4014L10.396 13.6756Z" fill="#FF8300" />
-                  </svg>
-                </span>
-              </button>
+              <p className="text-orange">4 Mins. Read</p>
               <span className="pt-5 flex uppercase space-x-6 text-coregray tracking-widest items-center">
                 <span className="dark:text-gray-300">FREE.</span>
                 <span className="dark:text-gray-300">3 PAGES</span>
@@ -104,7 +96,7 @@ const ArticleFour = () => {
             </div>
           </div>
           <div>
-            <h1 className="text-4xl font-trirong py-4 capitalize dark:text-white">Introduction</h1>
+            <h1 className="text-4xl font-trirong py-4 capitalize dark:text-white md:text-left text-justify">Introduction</h1>
             <p className="md:text-lg pt-6 dark:text-altgrey">
               The Gig Economy also referred to as the platform economy is a type of work
               arrangement where professionals are hired as an independent contractor as
@@ -113,7 +105,7 @@ const ArticleFour = () => {
               “side hustles” or “runs” which individuals engage in to supplement the
               income from their main jobs
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               The Information and Communications Technology (ICT) sector seems to be the
               early mover in the emergence of gigs in the country. It is not unusual to
               see ICT professionals working independently for multiple companies at the
@@ -124,7 +116,7 @@ const ArticleFour = () => {
               and Abuja double as drivers in their spare time or even after close of
               business.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               A study done by McKinsey in 2016 showed that between 20% and 30% of the
               working-age population in the United States and the European Union were
               engaged in one form of independent work or the other. “Free agents”,
@@ -135,24 +127,24 @@ const ArticleFour = () => {
               of income. It is not unlikely that this is the category where most
               gig workers in Nigeria currently fall into.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               A report by Staffing Industry Analysts (SIA), estimated that the global gig
               was worth $4.5 trillion in 2018, with the US unsurprisingly being the largest
               market with 53 million gig workers and total gig spending of $1.3 trillion.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               Given the value of gig economy across Africa, Nigeria inclusive, the gig economy
               platforms take different forms, for example, there are platforms who connect
               professionals to third party and get jobs done and common platforms are Up-work,
               Fiverr, and Paydesk.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               Africa platforms like Kobo360 (Nigeria) and Lori Systems (Kenya), two companies
               that have each raised at least $37 million to connect people with third-party
               truck drivers base on-demand. Lori Systems estimates that the African haulage
               market is worth $180 billion annually.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               Mark Zuckerberg funded Andela platform for professional services like accounting,
               graphics design, programming, content writing, among others and it is valued at
               $700 million in 2019. Andela connects experienced African developer talent to
@@ -168,7 +160,7 @@ const ArticleFour = () => {
                 alt="metrics"
               />
             </div>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               As the Nigerian economy and IT evolves, gigs will no doubt become an increasingly
               popular option for outsourcing talents. Some of the opportunities gig provide for
               small businesses include
@@ -233,7 +225,7 @@ const ArticleFour = () => {
             </h1>
             <ul className="md:pl-6">
               <li className="list-disc">
-                <p className="md:text-lg pt-6 dark:text-altgrey">
+                <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
                   <span className="font-semibold mr-1">Job Insecurity: </span>
                   The concept of job security is based on a steady income,
                   a sense of permanence, and retirement benefits. Gig workers are usually
@@ -246,7 +238,7 @@ const ArticleFour = () => {
                 </p>
               </li>
               <li className="list-disc">
-                <p className="md:text-lg pt-6 dark:text-altgrey">
+                <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
                   <span className="font-semibold mr-1"> Uncertain Incentives:</span>
                   Gig workers have lower levels of protection when it comes
                   to termination of their employment. This is having in mind that not all temporary
@@ -258,7 +250,7 @@ const ArticleFour = () => {
                 </p>
               </li>
               <li className="list-disc">
-                <p className="md:text-lg pt-6 dark:text-altgrey">
+                <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
                   <span className="font-semibold mr-1">More efficient delivery:</span>
                   The competition for their time ideally makes gig workers
                   more efficient in their delivery. With multiple client commitments, a gig worker
@@ -268,7 +260,7 @@ const ArticleFour = () => {
                 </p>
               </li>
               <li className="list-disc">
-                <p className="md:text-lg pt-6 dark:text-altgrey">
+                <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
                   <span className="font-semibold mr-1">Legal Protection: </span>
                   There are very few countries with defined regulatory provisions
                   protecting the interests of gig workers. As a result, these casual jobs are taken
@@ -278,7 +270,7 @@ const ArticleFour = () => {
                 </p>
               </li>
               <li className="list-disc">
-                <p className="md:text-lg pt-6 dark:text-altgrey">
+                <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
                   <span className="font-semibold mr-1">Access to Fund/Credit: </span>
                   Another challenge that gig workers face is the lack of salary slips which can
                   prevent gig workers from accessing certain financial services such as loans
@@ -286,12 +278,12 @@ const ArticleFour = () => {
                 </p>
               </li>
             </ul>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               Notwithstanding the setbacks and challenges confronting Small and Medium
               Enterprises, if properly equipped, they can grow the economy and contribute
               more to Nigeria’s growth so that She can take its place on the world stage.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               An enabling platform to do this is BlackBox. Blackbox would create room for
               healthy and operational business creation as well as enable a seamless means
               of carrying out business activities thereby creating healthy competition among
@@ -303,7 +295,7 @@ const ArticleFour = () => {
             <h1 className="md:text-4xl text-2xl font-trirong pt-4 md:pt-12 capitalize dark:text-white">
               Conclusion
             </h1>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               Despite its challenges, a pronounced gig economy plays a crucial role in
               people’s entry into the labour market, it helps the young population gain relevant
               work experience. Whether you are an Nigerian freelance writer remotely running a
@@ -312,14 +304,14 @@ const ArticleFour = () => {
               economy. Taking up gigs is an opportunity for professionals to upskill without
               being held back by their stable job.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               In essence, the gig economy provides a kind of testing ground which helps young
               people try out different roles, compare work ethics across sectors, develop other
               skills, as well as build a network with other professionals. Meanwhile, an employer
               can objectively judge whether an employee is a best fit for the company after a
               series of short-term services before deciding to offer permanent employment.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               Ultimately, If Nigeria will benefit from the gig economy, we need to adopt an
               inclusive regulatory model for every form of employment. Eventually, it would
               be less complicated belonging to either side of the labour phase. Perhaps,
