@@ -89,7 +89,7 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <div className="md:px-16 px-5 md:py-20 py-40">
+        <div className="md:px-16 px-5 py-40">
           <h1 className="md:text-4xl text-3xl font-trirong capitalize text-center font-medium dark:text-white">Industries</h1>
           <div className="flex justify-center items-center md:space-x-20 space-x-2 md:pt-20 pt-10">
             <a href="#a" className="flex md:space-x-4 space-x-2 items-center">
@@ -127,23 +127,23 @@ const Home = () => {
         </div>
       </section>
       <section className="bg-altgrey dark:bg-kiwi">
-        <div className="md:flex items-center md:px-16 md:space-y-0 space-y-20 px-5 md:py-32 py-20">
+        <div className="md:flex items-center md:px-16 md:space-y-0 md:space-x-10 space-x-0 space-y-20 px-5 md:py-40 py-20">
           <div className="md:w-1/2">
             <AttentionSeeker>
               <h1 className="text-lg text-orange font-medium uppercase">Lawrence Price Business Solution</h1>
             </AttentionSeeker>
             <Fade direction="down">
-              <h1 className="md:text-7xl text-3xl md:pt-16 pt-6 capitalize font-trirong dark:text-white">
+              <h1 className="md:text-4rem text-3xl md:pt-16 pt-6 capitalize font-trirong dark:text-white">
                 Business
                 Strategic Alliance
               </h1>
             </Fade>
             <AttentionSeeker effect="pulse">
               <p className="font-medium text-coregray md:text-4xl text-2xl md:pt-10 pt-4 dark:text-gray-400">
-                We engage in early-stage seed to help
-                entrepreneurs launch their businesses
-                and guide these businesses through
-                their growth phase.
+                From business process automation to
+                business consulting we guide you all
+                the way till you achieve that core
+                business goal.
               </p>
             </AttentionSeeker>
             <div className="md:pt-16 pt-10">
@@ -165,7 +165,7 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <BusinessCategory businessType="Lawrence Price Wealth" />
+        <BusinessCategory businessType="Lawrence Price Wealth & investments" />
       </section>
       <section className="bg-white dark:bg-kiwi md:py-20">
         <div className="md:flex md:items-end">
@@ -314,6 +314,16 @@ const Home = () => {
                 </div>
               ))}
             </Carousel>
+            <div className="relative -top-10 flex items-start justify-end">
+              <Link to="/blog" className="flex uppercase items-center space-x-2 hover:text-orange text-lg dark:text-orange font-medium">
+                <span>Visit our blog</span>
+                <span>
+                  <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L7.5 8.5L2 15" stroke="black" strokeWidth="2.5" strokeLinecap="square" />
+                  </svg>
+                </span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

@@ -10,7 +10,7 @@ const Banner = ({ image }) => (
           We are here for those
           who are bold enough
           to face
-          <span className="text-lawrenceprice"> Change.</span>
+          <span className="text-orange"> Change.</span>
         </h1>
       </Slide>
       <AttentionSeeker effect="pulse">
