@@ -9,15 +9,15 @@ const Contact = () => {
     <>
       <Navbar />
       <section>
-        <div className="bg-black dark:bg-kiwi md:px-16 md:py-44">
+        <div className="bg-black dark:bg-kiwi md:px-16 px-5 py-20 md:py-44">
           <div className="md:pl-24">
-            <h1 className="uppercase text-2xl text-white font-bold">Contact lp</h1>
-            <h1 className="md:text-7xl text-5xl font-trirong text-white font-medium capitalize pt-6">Holding Contact</h1>
+            <h1 className="uppercase md:text-2xl text-xl text-white font-bold">Contact lp</h1>
+            <h1 className="md:text-7xl text-4xl font-trirong text-white font-medium capitalize pt-6">Holding Contact</h1>
           </div>
         </div>
       </section>
       <section className="md:pt-48 md:pb-40 pt-10 pb-10" id="Section6">
-        <h1 className="text-5xl font-trirong font-medium md:pb-28 md:px-36 dark:text-white">General Contact</h1>
+        <h1 className="md:text-5xl text-3xl font-trirong font-medium md:pb-28 pb-8 md:px-36 px-5 dark:text-white">General Contact</h1>
         <div className="md:px-36 px-5 md:flex md:space-x-20">
           <div className="md:w-3/5">
             <form className="">

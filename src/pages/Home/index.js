@@ -185,7 +185,12 @@ const Home = () => {
                     Reduced
                     Inequality
                   </h1>
-                  <h1 className="text-4xl text-white font-medium capitalize pt-2">For good.</h1>
+                  <p className="text-24px text-white font-medium capitalize pt-2">
+                    For We strive to balance
+                    vertical and horizontal
+                    inequality by creating
+                    inclusion.
+                  </p>
                 </div>
                 <img
                   className="md:h-700px h-96 w-full object-cover"
@@ -196,7 +201,12 @@ const Home = () => {
               <div className="relative">
                 <div className="absolute bottom-24 left-6">
                   <h1 className="text-5xl text-white font-trirong font-medium capitalize">Agriculture</h1>
-                  <h1 className="text-4xl text-white font-medium capitalize pt-2">For good.</h1>
+                  <p className="text-24px text-white font-medium capitalize pt-2">
+                    Creating a supportive
+                    framework that ensures
+                    continuous gains in
+                    sustainability for all.
+                  </p>
                 </div>
                 <img
                   className="md:h-700px h-96 w-full object-cover"
@@ -211,7 +221,13 @@ const Home = () => {
               <div className="relative">
                 <div className="absolute bottom-24 left-6">
                   <h1 className="text-5xl text-white font-trirong font-medium capitalize">Education</h1>
-                  <h1 className="text-4xl text-white font-medium capitalize pt-2">For good.</h1>
+                  <p className="text-24px text-white font-medium capitalize pt-2">
+                    Ensuring inclusiveness,
+                    equitable quality education
+                    & promote lifelong
+                    learning opportunities
+                    for all
+                  </p>
                 </div>
                 <img
                   className="md:h-950px h-96 w-full object-cover"
@@ -222,7 +238,11 @@ const Home = () => {
               <div className="relative">
                 <div className="absolute bottom-24 left-6">
                   <h1 className="text-5xl text-white font-trirong font-medium capitalize">Technology</h1>
-                  <h1 className="text-4xl text-white font-medium capitalize pt-2">For good.</h1>
+                  <p className="text-24px text-white font-medium capitalize pt-2">
+                    Adopting digital technologies to
+                    amplify our efforts to confront the
+                    massive challenges that are faced globally.
+                  </p>
                 </div>
                 <img
                   className="md:h-950px h-96 w-full object-cover"
@@ -330,11 +350,11 @@ const Home = () => {
       <section>
         <div className="relative">
           <div className="absolute md:px-16 px-5 py-16 md:py-40">
-            <Link to="/blog/article/3" className="block font-trirong hover:text-orange font-semibold md:text-4rem text-4xl text-white md:pt-96 pt-5">
-              DRIVING ECONOMIC INCLUSION IN
-              THE INFORMAL SECTOR IN AFRICA.
+            <Link to="/blog/article/3" className="block font-trirong hover:text-orange font-semibold md:text-4rem text-4xl text-white md:pt-96 pt-5 capitalize">
+              Driving EConomic Inclusion In
+              The Informal Sector In Africa.
             </Link>
-            <h1 className="font-medium md:text-5xl text-3xl text-white capitalize md:pt-6">women in business 2021</h1>
+            <h1 className="font-medium md:text-5xl text-3xl text-white capitalize md:pt-6">women in business</h1>
             <div>
               <Link to="/blog/article/3" className="flex text-white text-lg font-medium space-x-2 items-center mt-6">
                 <span>Learn How</span>
@@ -366,10 +386,11 @@ const Home = () => {
             </Fade>
             <AttentionSeeker effect="pulse">
               <p className="font-medium text-coregray md:text-4xl text-2xl md:pt-10 pt-4 dark:text-gray-400">
-                We engage in early-stage seed to help
-                entrepreneurs launch their businesses
-                and guide these businesses through
-                their growth phase.
+                Our process typically yields a number of
+                attractive financing alternatives from
+                which you may choose in order to create
+                a capital structure that is cost-efficient
+                and flexible.
               </p>
             </AttentionSeeker>
           </div>

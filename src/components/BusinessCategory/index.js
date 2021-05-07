@@ -13,7 +13,7 @@ const BusinessCategory = ({ businessType }) => (
       </AttentionSeeker>
       <Fade direction="down">
         <p className="md:text-5xl text-4xl font-trirong font-medium pt-10 dark:text-white">
-          leveraging innovation and
+          Leveraging innovation and
           advanced analytics to create
           bespoke investment products
         </p>

@@ -15,14 +15,14 @@ const articles = [
     category: 'Lawrence Price Capital',
     title: 'WOMEN AND BUSINESS 2021',
     description: 'Africa is the world’s second largest and second most populous continent, ...',
-    image_url: 'https://images.unsplash.com/photo-1522512115668-c09775d6f424?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGJsYWNrJTIwd29tZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
+    image_url: 'https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1618307835/blackboxlanding/smiley-african-woman-working-market_o84h63.jpg',
     link: '/blog/article/1',
   },
   {
     category: 'Lets create the Future',
     title: 'IMPACT OF WOMEN ON  NIGERIA’S ECONOMY',
     description: 'As Nigeria remains one of the brightest economic spots in Africa...',
-    image_url: 'https://images.unsplash.com/photo-1607868894064-2b6e7ed1b324?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmxhY2slMjB3b21lbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
+    image_url: 'https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1620309377/blackboxlanding/Rectangle_001_pyug2n.png',
     link: '/blog/article/3',
   },
 ];

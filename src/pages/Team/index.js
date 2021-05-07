@@ -27,18 +27,15 @@ const Team = (props) => {
         <div className="md:px-16 md:py-32 py-16 px-5">
           <div className="md:pr-32">
             <h1 className="md:text-5xl text-3xl font-trirong capitalize font-medium dark:text-white">Lawrence Price & Company</h1>
-            <p className="md:text-24px text-lg text-coregray pt-4 dark:text-gray-300">
-              That is just what I was about to venture to propose,” returned the doctor
-              with a smile.
-              But the words were hardly uttered, before the smile was struck out of his face
-              and succeeded by an expression of such abject terror and despair, as froze the very
-              blood of the two gentlemen below.
+            <p className="md:text-24px text-lg text-coregray pt-4 dark:text-gray-300 md:text-left text-justify">
+              Lawrence Price and Company Limited is a provider of tech business solutions
+              and professional services provider. We offer a broad range of services in
+              various business operations such as in finance, technology and operations,
+              strategy and consulting, with digital capabilities and application across
+              all of these services, with the ultimate goal of ensuring that business
+              practices are in line with goal one or all-goal eleven SDG goals.
             </p>
-            <p className="pt-2 text-coregray md:text-24px text-lg dark:text-gray-300">
-              They saw it but for a glimpse for the window was instantly thrust down;
-              but that glimpse had been sufficient, and they turned and left the court
-              without a word.
-            </p>
+
           </div>
         </div>
       </section>

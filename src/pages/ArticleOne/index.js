@@ -104,7 +104,7 @@ const ArticleOne = () => {
           </div>
           <div>
             <h1 className="text-4xl font-trirong py-4 capitalize dark:text-white">Introduction</h1>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               Africa is the world’s second largest and second most populous continent, after Asia,
               accounting for more than 12% of the world’s human population.
               The continent is also blessed with youthful population,
@@ -115,14 +115,14 @@ const ArticleOne = () => {
               and mineral resources which if put into proper use with creative know-how,
               African nations should be at the forefront of the Global Economic Index.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               Despite the perceived potentials in Africa, the continent still remains the poorest
               and least developed continent in the world. Several factors including lack of basic
               amenities, poor education quality, lack of quality data and regressive government
               policy can be partly attributed to the perpetual position of Sub-Saharan Africa
               at the bottom of the Global Economy Index.
             </p>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               This article seeks to examine women in the informal Africa economy,
               their potential and also driving economic inclusion. According to ILO,
               the informal economy refers to all economic activities by workers and
@@ -137,7 +137,7 @@ const ArticleOne = () => {
               />
             </div>
             <h1 className="text-4xl font-trirong pt-4 pb-8 capitalize dark:text-altgrey">Potential of the Informal Sector</h1>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               The Africa Development Bank reported that the informal sector is the major source
               of employment across Africa, accounting for 80.8% of employment in Sub-Saharan Africa
               and 62 per cent in North Africa. The dynamism of the informal
@@ -154,7 +154,7 @@ const ArticleOne = () => {
               trap these groups into poverty and exclusion from economic growth and development,
               with only about 10 percent of operators benefiting from social protection schemes.
             </p>
-            <p className="md:text-24px text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               The urban informal economy is particularly common among youth (95.8% ages 15–24)
               and women (92.1%) and is an important contributor to poverty alleviation.
               Social protection like access to credit facilities, skills and digitization
@@ -165,7 +165,7 @@ const ArticleOne = () => {
               the added value of national trade in Benin, 46 per cent in Mali and 41
               per cent in Chad in 2012. In addition,
             </p>
-            <p className="md:text-24px text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               the diversity of informal employment across countries is captured by a set of
               characteristics related to the type and location of activities, access and use
               of technology, access to credit, productivity levels, and contribution
@@ -181,7 +181,7 @@ const ArticleOne = () => {
             <h1 className="md:text-4xl text-2xl font-trirong pt-4 pb-8 capitalize dark:text-altgrey">
               Informal Economy during the Covid-19 Pandemic
             </h1>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               Covid-19 lockdown adversely affected the informal sectors,
               with no access to social protection and inadequate savings
               to fall back on, the COVID-19 (coronavirus) pandemic lockdown
@@ -198,7 +198,7 @@ const ArticleOne = () => {
             <h1 className="md:text-4xl text-2xl font-trirong pt-4 md:pt-12 capitalize dark:text-white">
               Conclusion
             </h1>
-            <p className="md:text-lg pt-6 dark:text-altgrey">
+            <p className="md:text-lg pt-6 dark:text-altgrey md:text-left text-justify">
               The sub-Saharan Africa youthful population has a great potential
               in driving creative and innovative solutions that will improve
               lives of Africans and also speed up economic development in the region.
@@ -244,7 +244,7 @@ const ArticleOne = () => {
             <div className="md:flex md:space-x-24 md:space-y-0 space-y-8 md:pb-0 pb-10 items-center md:pt-12">
               <div className="flex items-center space-x-4">
                 <img
-                  src="https://images.unsplash.com/photo-1534520269876-e35bf9cb9d02?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGJsYWNrJTIwd29tZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                  src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1618305464/blackboxlanding/IMG_3066_pusvlv.jpg"
                   className="w-118px h-118px rounded-full object-cover"
                   alt="author"
                 />
@@ -257,7 +257,7 @@ const ArticleOne = () => {
               </div>
               <div className="flex items-center space-x-4">
                 <img
-                  src="https://images.unsplash.com/photo-1602201424573-b62fa78cebbb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGJsYWNrJTIwd29tZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                  src="https://res.cloudinary.com/https-www-lawrencepriceltd-com/image/upload/v1620308452/blackboxlanding/Rectangle_02_okngo9.png"
                   className="w-118px h-118px rounded-full object-cover"
                   alt="author"
                 />
