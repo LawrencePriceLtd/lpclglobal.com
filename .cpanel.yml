@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/lawrxtcw/test.lawrencepriceltd.com/
+    - /bin/cp -a * $DEPLOYPATH
